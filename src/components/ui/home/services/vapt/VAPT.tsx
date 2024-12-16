@@ -13,14 +13,14 @@ const VAPT: React.FC = () => {
             className="flex items-center justify-center"
             style={{ backgroundImage: `url(${Img})` }}>
             <div className="bg-black w-full bg-opacity-50 h-full flex flex-col md:flex-row items-center justify-center text-white py-8 px-4 sm:px-8 md:px-16 lg:px-32">
-                {/* Text Section */}
+                
                 <div className="text-center mb-8 md:mb-0 md:mr-8 mt-16 sm:mt-8 md:mt-1 lg:mt-16">
                 <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
                     VULNERABILITY<br />ASSESSMENT AND<br />PENETRATION TESTING
                 </div>
                 </div>
 
-                {/* Contact Form Section */}
+               
                 <div className="w-full md:w-auto sm:mt-8 md:mt-12 lg:mt-16">
                 <ContactForm bgClassName="bg-transparent" />
                 </div>

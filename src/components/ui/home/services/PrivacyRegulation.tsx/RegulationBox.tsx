@@ -7,8 +7,8 @@ interface RegulationBoxProps {
 
 const RegulationBox: React.FC<RegulationBoxProps> = ({ title }) => {
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 }, // Start from hidden with some vertical offset
-    visible: { opacity: 1, y: 0 }, // Transition to visible and remove offset
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }, 
   };
 
   return (
@@ -19,12 +19,12 @@ const RegulationBox: React.FC<RegulationBoxProps> = ({ title }) => {
       animate="visible"
       transition={{ duration: 0.6 }}
     >
-      {/* Sliding Background */}
+      
       <motion.span
         className="absolute inset-0 bg-teal-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"
       />
 
-      {/* Text Content */}
+      
       <motion.p
         className="font-medium relative z-10 group-hover:text-white transition-colors duration-500"
       >

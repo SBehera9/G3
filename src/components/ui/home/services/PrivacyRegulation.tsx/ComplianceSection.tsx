@@ -6,18 +6,18 @@ import "aos/dist/aos.css";
 const ComplianceSection: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      easing: "ease-in-out", // Animation easing
-      once: true, // Only trigger the animation once
+      duration: 1000, 
+      easing: "ease-in-out", 
+      once: true, 
     });
   }, []);
 
   return (
     <section className="flex flex-col md:flex-row items-center justify-center gap-8 px-6 md:px-16 lg:px-32 bg-white py-12">
-      {/* Left Image Section */}
+  
       <div
         className="flex-1"
-        data-aos="fade-right" // Animation for the image on scroll
+        data-aos="fade-right"
       >
         <img
           src={Img}
@@ -26,10 +26,9 @@ const ComplianceSection: React.FC = () => {
         />
       </div>
 
-      {/* Right Content Section */}
       <div
         className="flex-1 text-center md:text-left"
-        data-aos="fade-left" // Animation for the text on scroll
+        data-aos="fade-left" 
       >
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-teal-800 mb-4">
           Empowering Businesses with Comprehensive Privacy Compliance Solutions

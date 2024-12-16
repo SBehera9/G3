@@ -25,7 +25,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
-      const response = await axios.post("http://localhost:5000/api/contact", data);
+      await axios.post("http://localhost:5000/api/contact", data);
       alert("Form submitted successfully!"); // Alert message
       reset(); // Clear form fields
     } catch (error) {

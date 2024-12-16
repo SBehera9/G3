@@ -23,7 +23,7 @@ const PrivacyRegulationsPage: React.FC = () => {
       <Header />
       <ComplianceSection />
       <main className="flex-1 container mx-auto p-6">
-        {/* Regulations Section */}
+       
         <section className="mb-10 px-6 sm:px-16 md:px-24 lg:px-32">
           <h2 className="text-teal-800 font-bold text-2xl sm:text-3xl md:text-4xl mb-4">Data Protection Regulations</h2>
           <motion.div
@@ -35,7 +35,7 @@ const PrivacyRegulationsPage: React.FC = () => {
               visible: {
                 opacity: 1,
                 transition: {
-                  staggerChildren: 0.5, // Stagger children with a delay
+                  staggerChildren: 0.5, 
                 },
               },
             }}

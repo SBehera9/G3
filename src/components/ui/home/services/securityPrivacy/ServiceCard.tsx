@@ -54,18 +54,18 @@ const FrameworkServices: React.FC = () => {
   return (
     <section className="bg-gray-50 py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
+        
         <h2 className="text-base sm:text-lg lg:text-4xl text-teal-800 font-bold mb-8 text-center animate-slidein">
           Our Framework Implementation Services
         </h2>
-        {/* Service List */}
+       
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
               key={index}
               className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6"
             >
-              {/* Image */}
+              
               <div className="flex-shrink-0 w-20 h-20 md:w-24 md:h-24">
                 <img
                   src={service.imageUrl}
@@ -73,7 +73,7 @@ const FrameworkServices: React.FC = () => {
                   className="w-full h-full object-contain animate-slidein"
                 />
               </div>
-              {/* Content */}
+             
               <div className="mt-4 text-center">
                 <h3 className="text-sm sm:text-base md:text-lg font-bold text-teal-800 animate-slidein">
                   {service.title}

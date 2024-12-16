@@ -7,7 +7,7 @@ interface ESLcardProps {
   backgroundImage: string; // The image path passed as a prop
 }
 
-const ESLcard: React.FC<ESLcardProps> = ({ title, description, buttonText, backgroundImage }) => {
+const ESLcard: React.FC<ESLcardProps> = ({ title, description, backgroundImage }) => {
   return (
     <div className="relative py-9">
       {/* Image container */}
