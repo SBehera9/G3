@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import icons
-import logo from '../assets/Image/4.png';
+import logo from '../assets/Image/img4.png';
 
 const Footer: React.FC = () => {
   return (
@@ -75,13 +75,13 @@ const Footer: React.FC = () => {
         {/* Reach Us Section */}
         <div className="md:col-span-1">
           <h3 className="font-bold text-xl mb-4">Reach Us</h3>
-          <h4 className="font-semibold text-lg mb-2">Our Address</h4>
+          {/* <h4 className="font-semibold text-lg mb-2">Our Address</h4>
           <address className="not-italic mb-4">
             Millenia Business Park, Phase two, Campus 3A,<br />
             2nd Floor, Dr M.G.R Main Road, Kandhanchavadi,<br />
             Perungudi, 600096
-          </address>
-          <p>Email us: <a href="mailto:sales@soltrisk-io" className="hover:text-gray-300">sales@soltrisk-io</a></p>
+          </address> */}
+          <p>Email us: <a href="mailto:sales@soltrisk-io" className="hover:text-gray-300">info@g3cyberspace.com</a></p>
         </div>
 
       </div>
