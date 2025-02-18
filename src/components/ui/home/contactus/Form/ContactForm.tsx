@@ -2,6 +2,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
 import Img from "../../../../../assets/Image/img30.jpg";
+import { useNavigate } from "react-router-dom";
 
 interface FormData {
   name: string;
@@ -22,12 +23,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
     reset,
     formState: { errors },
   } = useForm<FormData>();
+  const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       await axios.post("http://localhost:5000/api/contact", data);
       alert("Form submitted successfully!"); 
       reset(); 
+      navigate("/contact");
     } catch (error) {
       console.error("Error sending message:", error);
       alert("Failed to submit the form. Please try again."); 
