@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
   const navigate = useNavigate();
 
   const handleNavigateToForm = () => {
-    navigate("/contact-form"); // Adjust the route as per your routing setup
+    navigate("/contact-form"); 
   };
 
   return (
@@ -17,7 +17,6 @@ const Contact: React.FC = () => {
           Contact Us
         </h1>
 
-        {/* Contact Information */}
         <div className="mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">
             Our Office
@@ -43,7 +42,6 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        {/* Navigation to Contact Form */}
         <div className="text-center">
           <p className="text-sm sm:text-base md:text-lg font-medium mb-3 sm:mb-4">
             For further information, please fill out the form below

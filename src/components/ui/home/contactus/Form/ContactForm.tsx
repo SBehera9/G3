@@ -26,11 +26,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       await axios.post("http://localhost:5000/api/contact", data);
-      alert("Form submitted successfully!"); // Alert message
-      reset(); // Clear form fields
+      alert("Form submitted successfully!"); 
+      reset(); 
     } catch (error) {
       console.error("Error sending message:", error);
-      alert("Failed to submit the form. Please try again."); // Error alert
+      alert("Failed to submit the form. Please try again."); 
     }
   };
 
@@ -42,7 +42,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
       <div className="bg-transparent p-4 w-[500px]">
         <form className="space-y-6 flex-row md:flex-col" onSubmit={handleSubmit(onSubmit)}>
 
-          {/* Name Field */}
           <div>
             <label className="block text-sm font-medium text-white">Name</label>
             <input
@@ -56,7 +55,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
           </div>
 
-          {/* Email Field */}
           <div>
             <label className="block text-sm font-medium text-white">Business Email address</label>
             <input
@@ -73,7 +71,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
           </div>
 
-          {/* Company Name */}
           <div>
             <label className="block text-sm font-medium text-white">Company Name</label>
             <input
@@ -87,7 +84,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
             {errors.companyname && <p className="text-red-500 text-sm mt-1">{errors.companyname.message}</p>}
           </div>
 
-          {/* Company Name */}
           <div>
             <label className="block text-sm font-medium text-white">Country</label>
             <input
@@ -102,7 +98,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
           </div>
 
 
-          {/* Message Field */}
           <div>
             <label className="block text-sm font-medium text-white">How can we help you with?</label>
             <textarea
@@ -116,7 +111,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" 
             {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
           </div>
 
-          {/* Submit Button */}
           <div className="flex justify-center items-center">
           <button
             type="submit"
