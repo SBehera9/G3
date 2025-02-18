@@ -2,7 +2,7 @@ import React from "react";
 
 const BusinessGrowthSection: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gray-100 rounded-lg shadow-md">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gray-100 rounded-lg shadow-md mb-10">
       <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-teal-800">
         Vision
       </h1>
@@ -41,6 +41,7 @@ const BusinessGrowthSection: React.FC = () => {
         Partner with us to unlock growth opportunities by building a resilient, secure, and compliant organization ready to thrive in the digital age.
       </p>
     </section>
+    
   );
 };
 

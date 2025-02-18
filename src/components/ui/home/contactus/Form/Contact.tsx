@@ -17,27 +17,27 @@ const Contact: React.FC = () => {
           Contact Us
         </h1>
 
-        <div className="mb-6 sm:mb-8">
+        {/* <div className="mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">
             Our Office
           </h2>
           <p className="text-sm sm:text-base md:text-lg">1234 Elm Street, Suite 567</p>
           <p className="text-sm sm:text-base md:text-lg">Cityville, State 12345</p>
-        </div>
+        </div> */}
         <div className="mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2">
             Get in Touch
           </h2>
-          <p className="text-sm sm:text-base md:text-lg">
+          {/* <p className="text-sm sm:text-base md:text-lg">
             Phone:{" "}
             <a href="tel:+1234567890" className="text-teal-600 hover:underline">
               +1-234-567-890
             </a>
-          </p>
+          </p> */}
           <p className="text-sm sm:text-base md:text-lg">
             Email:{" "}
             <a href="mailto:info@company.com" className="text-teal-600 hover:underline">
-              contact@example.com
+             info@g3cyberspace.com
             </a>
           </p>
         </div>
