@@ -16,8 +16,8 @@ import PrivacyASS from "./components/ui/home/services/AssessmentsPrivacy/DataPri
 import Cybersecurityassessment from "./components/ui/home/services/assessmentcybersecurity/Cybersecurityassessment";
 import MainPage from "./components/ui/home/services/securityPrivacy/MainPage";
 import SoltRisk from "./components/ui/home/hsection/OPsoltrisk/SoltRisk";
-import Contact from "./components/ui/home/contactus/Form/Contact";
-import ContactForm from "./components/ui/home/contactus/Form/ContactForm";
+import Contact from "./components/ui/home/contactus/Contact";
+import ContactForm from "./components/ui/home/contactus/ContactForm";
 import PofessionalServices from "./components/ui/home/services/PofessionalServices/PofessionalServices";
 import PrivacyPolicy from "./components/ui/home/privacypolicy/PrivacyPolicy";
 import VAPT from "./components/ui/home/services/vapt/VAPT";

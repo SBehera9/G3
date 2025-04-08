@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "../../../../../components/Footer";
 import Excellence from "./Excellence";
-import ContactForm from "../../contactus/Form/ContactForm";
+import ContactForm from "../../contactus/ContactForm";
 
 const CybersecurityServicesPage: React.FC = () => {
   return (

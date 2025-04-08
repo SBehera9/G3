@@ -9,11 +9,7 @@ import TestimonialsPage from "../ui/home/Testimonials/TestimonialsPage";
 
 const Home: React.FC = () => {
   return (
-<<<<<<< HEAD
-    <html lang="en" className="bg-white !scroll-smooth">
-=======
     <div className="bg-white !scroll-smooth">
->>>>>>> 89881d7bd23f730174621b145006f0cdd945be6d
       <div
         className="relative flex items-center justify-start h-screen sm:h-[75vh] md:h-[85vh] lg:h-screen bg-cover bg-fixed bg-center"
         style={{ backgroundImage: `url(${Img})` }}
@@ -29,10 +25,6 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-<<<<<<< HEAD
-      
-=======
->>>>>>> 89881d7bd23f730174621b145006f0cdd945be6d
       <About />
       <Services />
       <CompliancePage />

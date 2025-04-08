@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "../../../../Footer";
 import PrivacySolutions from "./PrivacySolutions";
-import ContactForm from "../../contactus/Form/ContactForm";
+import ContactForm from "../../contactus/ContactForm";
 
 const DataPrivacyFramework: React.FC = () => {
   return (

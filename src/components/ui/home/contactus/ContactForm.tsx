@@ -33,11 +33,9 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="bg-black">
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="bg-transparent space-y-5 "
-      >
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+      {/* Name */}
+      <div>
         <input
           type="text"
           {...register("name", {
@@ -45,10 +43,13 @@ const ContactForm: React.FC = () => {
             minLength: { value: 3, message: "Name must be at least 3 characters" },
           })}
           placeholder="Your Name"
-          className="w-full p-3 py-5 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
         />
-        {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+        {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+      </div>
 
+      {/* Email */}
+      <div>
         <input
           type="email"
           {...register("email", {
@@ -59,10 +60,13 @@ const ContactForm: React.FC = () => {
             },
           })}
           placeholder="Your Email"
-          className="w-full p-3 py-5 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
         />
-        {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+        {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
+      </div>
 
+      {/* Subject */}
+      <div>
         <input
           type="text"
           {...register("subject", {
@@ -70,30 +74,34 @@ const ContactForm: React.FC = () => {
             minLength: { value: 3, message: "Subject must be at least 3 characters" },
           })}
           placeholder="Subject"
-          className="w-full p-3 py-5 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
         />
-        {errors.subject && <p className="text-red-500 text-sm">{errors.subject.message}</p>}
+        {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
+      </div>
 
+      {/* Message */}
+      <div>
         <textarea
           rows={4}
           {...register("message", { required: "Message is required" })}
           placeholder="Your Message"
-          className="w-full p-3 py-7 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
-        ></textarea>
-        {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
-
-        <button
-          type="submit"
-          className="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-5 w-full rounded-md transition duration-200"
-        >
-          Send Message
-        </button>
-
-        <p className="text-blue-400 text-sm text-center underline mt-2 cursor-pointer">
-          Privacy Notice
-        </p>
-      </form>
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+        />
+        {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
       </div>
+
+      {/* Submit Button */}
+      <button
+        type="submit"
+        className="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-4 w-full rounded-md transition duration-200"
+      >
+        Send Message
+      </button>
+
+      <p className="text-blue-400 text-sm text-center underline mt-2 cursor-pointer">
+        Privacy Notice
+      </p>
+    </form>
   );
 };
 

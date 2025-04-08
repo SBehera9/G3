@@ -4,7 +4,7 @@ import img1 from "../../../../../assets/Image/im9.jpg";
 import img2 from "../../../../../assets/Image/im10.jpg";
 import img3 from "../../../../../assets/Image/im11.jpg";
 import Footer from "../../../../Footer";
-import ContactForm from "../../contactus/Form/ContactForm";
+import ContactForm from "../../contactus/ContactForm";
 
 const VAPT: React.FC = () => {
     return ( 
