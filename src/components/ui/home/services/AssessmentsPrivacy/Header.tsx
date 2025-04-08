@@ -6,7 +6,11 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const handleNavigateToForm = () => {
+<<<<<<< HEAD
     navigate("/contact"); 
+=======
+    navigate("/contact-form"); 
+>>>>>>> 89881d7bd23f730174621b145006f0cdd945be6d
   };
 
   return (
@@ -23,7 +27,7 @@ const Header: React.FC = () => {
         </p>
         <button
           onClick={handleNavigateToForm}
-          className="bg-teal-800 text-white px-6 py-2 rounded-lg hover:bg-teal-600 focus:outline-none focus:ring focus:ring-teal-300 mt-10 font-bold"
+          className="bg-[#4096B5] text-white px-6 py-2 rounded-lg hover:bg-[#4096B5] focus:outline-none focus:ring focus:ring-[#4096B5] mt-10 font-bold"
         >
           Contact us
         </button>

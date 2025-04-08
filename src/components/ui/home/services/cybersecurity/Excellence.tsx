@@ -22,20 +22,18 @@ const Excellence: React.FC = () => {
 
   return (
     <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-8 space-y-16 flex flex-col items-center">
-      {/* Introduction Section */}
       <div className="text-center px-4">
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-teal-800 mb-2 animate-slidein">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-[#4096B5] mb-2 animate-slidein">
           Cybersecurity Excellence
         </p>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-54 sm:mb-6 text-center text-teal-800 animate-slidein">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-54 sm:mb-6 text-center text-[#4096B5] animate-slidein">
           Our key service offerings
         </h2>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-teal-800 animate-slidein">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#4096B5] animate-slidein">
           Our tailored solutions identify vulnerabilities and fortify your defenses against cyber threats.
         </p>
       </div>
 
-      {/* Section 1 */}
       <div
         className={`flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8 w-full ${scrolling ? "slide-in-left" : ""}`}
       >
@@ -47,10 +45,10 @@ const Excellence: React.FC = () => {
           />
         </div>
         <div className="w-full lg:w-[500px] text-center lg:text-left px-4">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-teal-800 mb-4">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#4096B5] mb-4">
             Gap Assessments: Your First Step to Cybersecurity Excellence
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-teal-800 mb-4">
+          <p className="text-sm sm:text-base md:text-lg text-[#4096B5] mb-4">
             Uncover hidden vulnerabilities and unlock your organization's true cybersecurity potential.
             <br />
             <br />
@@ -59,21 +57,18 @@ const Excellence: React.FC = () => {
             <br />
             <b>Audit & Certification Readiness:</b> Prepare your organization to meet compliance requirements with customized solutions.
           </p>
-          {/* <button className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
-            Read more
-          </button> */}
+        
         </div>
       </div>
 
-      {/* Section 2 */}
       <div
         className={`flex flex-col-reverse lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8 w-full ${scrolling ? "slide-in-right" : ""}`}
       >
         <div className="w-full lg:w-[500px] text-center lg:text-left px-4">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-teal-800 mb-4">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#4096B5] mb-4">
             Cybersecurity Audits: Uncover, Validate, Secure
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-teal-800 mb-4">
+          <p className="text-sm sm:text-base md:text-lg text-[#4096B5] mb-4">
             Strengthen your defenses with a deep dive into your cybersecurity framework.
             <br />
             <br />
@@ -82,9 +77,7 @@ const Excellence: React.FC = () => {
             <br />
             <b>Regulatory Compliance Review:</b> Ensure adherence to industry standards and best practices.
           </p>
-          {/* <button className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
-            Read more
-          </button> */}
+          
         </div>
         <div className="w-full lg:w-[500px] h-auto flex items-center justify-center">
           <img
@@ -95,7 +88,6 @@ const Excellence: React.FC = () => {
         </div>
       </div>
 
-      {/* Section 3 */}
       <div
         className={`flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-8 w-full ${scrolling ? "slide-in-left" : ""}`}
       >
@@ -107,10 +99,10 @@ const Excellence: React.FC = () => {
           />
         </div>
         <div className="w-full lg:w-[500px] text-center lg:text-left px-4">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-teal-800 mb-4">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#4096B5] mb-4">
             IS Regulations Compliance: Simplifying Complexity, Ensuring Confidence
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-teal-800 mb-4">
+          <p className="text-sm sm:text-base md:text-lg text-[#4096B5] mb-4">
             Achieve seamless compliance with ever-evolving Information Security (IS) regulations.
             <br />
             <br />
@@ -119,9 +111,7 @@ const Excellence: React.FC = () => {
             <br />
             <b>Tailored Compliance Frameworks:</b> Develop customized strategies to meet global standards and local laws effectively.
           </p>
-          {/* <button className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
-            Read more
-          </button> */}
+          
         </div>
       </div>
     </div>

@@ -55,7 +55,7 @@ const FrameworkServices: React.FC = () => {
     <section className="bg-gray-50 py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <h2 className="text-base sm:text-lg lg:text-4xl text-teal-800 font-bold mb-8 text-center animate-slidein">
+        <h2 className="text-base sm:text-lg lg:text-4xl text-[#4096B5] font-bold mb-8 text-center animate-slidein">
           Our Framework Implementation Services
         </h2>
        
@@ -75,15 +75,13 @@ const FrameworkServices: React.FC = () => {
               </div>
              
               <div className="mt-4 text-center">
-                <h3 className="text-sm sm:text-base md:text-lg font-bold text-teal-800 animate-slidein">
+                <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#4096B5] animate-slidein">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-xs sm:text-sm md:text-base text-teal-600 animate-slidein">
+                <p className="mt-2 text-xs sm:text-sm md:text-base text-[#4096B5] animate-slidein">
                   {service.description}
                 </p>
-                {/* <button className="mt-4 px-4 py-2 text-xs sm:text-sm md:text-base font-medium text-white bg-teal-900 rounded hover:bg-green-700">
-                  Read More
-                </button> */}
+                
               </div>
             </div>
           ))}

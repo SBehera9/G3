@@ -30,10 +30,10 @@ const ComplianceSection: React.FC = () => {
         className="flex-1 text-center md:text-left"
         data-aos="fade-left" 
       >
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-teal-800 mb-4">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4096B5] mb-4">
           Empowering Businesses with Comprehensive Privacy Compliance Solutions
         </h3>
-        <p className="text-teal-600 text-sm sm:text-base leading-6">
+        <p className="text-[#4096B5] text-sm sm:text-base leading-6">
           With increasingly stringent privacy laws and heightened consumer
           expectations, compliance with global and regional data protection
           regulations has become essential for businesses. Our Privacy

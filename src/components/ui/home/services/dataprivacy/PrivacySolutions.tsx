@@ -1,6 +1,5 @@
 import React from "react";
 
-// Import images
 import image1 from "../../../../../assets/Image/Image40.png"; 
 import image2 from "../../../../../assets/Image/Image41.png"; 
 import image3 from "../../../../../assets/Image/Image42.png"; 
@@ -9,7 +8,6 @@ import image5 from "../../../../../assets/Image/Image44.jpeg";
 import image6 from "../../../../../assets/Image/Image45.jpg"; 
 
 const PrivacySolutions: React.FC = () => {
-  // Data for cards
   const cardData = [
     {
       title: "Privacy readiness assessments",
@@ -57,7 +55,6 @@ const PrivacySolutions: React.FC = () => {
 
   return (
     <section className="bg-gray-50 py-12 px-4 sm:px-8 lg:px-16">
-      {/* Section Heading */}
       <div className="text-left mb-12">
         <p className="text-sm font-bold text-teal-600 uppercase">
           Privacy Solutions
@@ -67,21 +64,18 @@ const PrivacySolutions: React.FC = () => {
         </h2>
       </div>
 
-      {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {cardData.map((card, index) => (
           <div
             key={index}
             className="bg-white shadow-md rounded-lg overflow-hidden group relative"
           >
-            {/* Image */}
             <img
               src={card.image}
               alt={card.title}
               className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover transition-opacity duration-300 group-hover:opacity-70"
             />
             
-            {/* Text Content */}
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 sm:p-6 md:p-8 text-center space-y-4">
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">
                 {card.title}
@@ -89,9 +83,7 @@ const PrivacySolutions: React.FC = () => {
               <p className="text-sm sm:text-base text-white">
                 {card.description}
               </p>
-              {/* <button className="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded shadow hover:bg-blue-700">
-                {card.buttonText}
-              </button> */}
+              
             </div>
           </div>
         ))}

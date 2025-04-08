@@ -11,7 +11,7 @@ const HeadSection: React.FC = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold mb-4 mt-16">
           Cybersecurity Assessment Services
         </h1>
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-3xl shadow-sm p-4 border-l-8 border-orange-600 ">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-3xl shadow-sm p-4 border-l-8 border-[#4096B5] ">
           Stay ahead of the curve with our comprehensive cybersecurity assessment solutions!
         </p>
       </div>
