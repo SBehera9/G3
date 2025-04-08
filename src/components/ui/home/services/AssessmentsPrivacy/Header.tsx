@@ -6,7 +6,11 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const handleNavigateToForm = () => {
+<<<<<<< HEAD
+    navigate("/contact"); 
+=======
     navigate("/contact-form"); 
+>>>>>>> 89881d7bd23f730174621b145006f0cdd945be6d
   };
 
   return (

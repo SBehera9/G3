@@ -16,7 +16,10 @@ const PofessionalServices : React.FC = () => {
      <ESL/>
      <KfGrid/>
      <div className="w-full border-2 border-teal-950"></div>
-     <ContactForm/>
+     <div className="grid grid-cols-2 bg-black p-10">
+      <div></div>  
+      <ContactForm />
+      </div> 
      <Footer />
      
     </div>

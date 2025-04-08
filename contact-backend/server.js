@@ -19,8 +19,7 @@ mongoose
 const contactSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },
-  companyname: { type: String, required: true },
-  countryname: {type: String, required: true },
+  subject: { type: String, required: true },
   message: { type: String, required: true },
 });
 
@@ -28,8 +27,8 @@ const Contact = mongoose.model("Contact", contactSchema);
 
 app.post("/api/contact", async (req, res) => {
   try {
-    const { name, email, companyname, countryname, message } = req.body;
-    const newContact = new Contact({ name, email, companyname, countryname, message });
+    const { name, email, subject, message } = req.body;
+    const newContact = new Contact({ name, email, subject, message });
     await newContact.save();
     res.status(201).json({ message: "Message sent successfully!" });
   } catch (err) {

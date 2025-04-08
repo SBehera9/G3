@@ -11,7 +11,10 @@ const CybersecurityServicesPage: React.FC = () => {
       <main>
         <Excellence />
       </main>
+      <div className="grid grid-cols-2 bg-black p-10">
+      <div></div>  
       <ContactForm />
+      </div> 
       <Footer />
     </div>
   );

@@ -21,8 +21,8 @@ const VAPT: React.FC = () => {
                 </div>
 
                
-                <div className="w-full md:w-auto sm:mt-8 md:mt-12 lg:mt-16">
-                <ContactForm bgClassName="bg-transparent" />
+                <div className="w-[100%] sm:w-[50%] sm:mt-8 md:mt-12 lg:mt-16">
+                <ContactForm />
                 </div>
                 </div>
                 </div>
