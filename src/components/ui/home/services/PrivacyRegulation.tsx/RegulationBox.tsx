@@ -13,7 +13,7 @@ const RegulationBox: React.FC<RegulationBoxProps> = ({ title }) => {
 
   return (
     <motion.div
-      className="group relative bg-teal-100 text-[#4096B5] border-l-4 border-[#4096B5] p-4 rounded-lg shadow-sm overflow-hidden"
+      className="group relative  text-[#4096B5] border-l-4 border-[#4096B5] p-4 rounded-lg shadow-sm overflow-hidden"
       variants={itemVariants}
       initial="hidden"
       animate="visible"
