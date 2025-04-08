@@ -9,15 +9,16 @@ const PrivacyPolicy: React.FC = () => {
         className="relative min-h-screen items-center text-teal-50 text-center bg-center flex flex-col justify-center bg-fixed bg-cover px-4 sm:px-14"
         style={{ backgroundImage: `url(${Img})` }}
       >
-        <h1 className="text-2xl sm:text-3xl font-bold mb-6">Privacy Policy</h1>
-        <p className="mb-4 px-4 sm:px-0">
-          This Privacy Policy explains how G3 Cyberspace Pvt Ltd and its affiliate product Soltrisk (hereinafter referred to as “we”, “us”, “our”) may collect, use, store, disclose, discard, or otherwise process your data including personal data provided when using our websites and describes the rights you have with respect to your personal data. 
-          We are committed to providing the highest level of protection regarding the processing of their vendors’/clients’/customers’/job applicants’/website visitors’ personal data based on applicable data protection laws and regulations at respective locations. In general, you can visit our website without providing personal data. However, there are times when we will request personal data.
-        </p>
+        <h1 className="text-4xl sm:text-6xl font-bold mb-6 text-center">Privacy Policy</h1>
       </div>
 
       <div className='flex flex-col justify-center items-center px-4 sm:px-40'>
         <div className='w-full'>
+        <p className="mb-4 px-4 sm:px-0 mt-5">
+          This Privacy Policy explains how G3 Cyberspace Pvt Ltd and its affiliate product Soltrisk (hereinafter referred to as “we”, “us”, “our”) may collect, use, store, disclose, discard, or otherwise process your data including personal data provided when using our websites and describes the rights you have with respect to your personal data. 
+          We are committed to providing the highest level of protection regarding the processing of their vendors’/clients’/customers’/job applicants’/website visitors’ personal data based on applicable data protection laws and regulations at respective locations. In general, you can visit our website without providing personal data. However, there are times when we will request personal data.
+        </p>
+
           <h2 className="text-xl sm:text-2xl font-semibold mt-6 mb-4">Personal Data</h2>
           <p className="mb-4">
             In this Privacy Policy, “personal data” is any data which relates to an individual who may be identified from that data, or from a combination of a set of data, and other information which is or may be in possession of us, for instance information about your identity and contact details (such as name, email-ID, contact number).
@@ -66,7 +67,7 @@ const PrivacyPolicy: React.FC = () => {
           <h2 className="text-xl sm:text-2xl font-semibold mt-6 mb-4">Contact Details</h2>
           <p className="mb-4">
             If you have any questions regarding this privacy policy or the protection of your personal data, you may reach out to our company representative at
-            <a href="mailto:info@company.com" className="text-[#4096B5] underline"> info@g3cyberspace.com</a>.
+            <a href="mailto:info@g3cyberspace.com" className="text-[#4096B5] underline"> info@g3cyberspace.com</a>.
           </p>
         </div>
       </div>

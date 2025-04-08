@@ -5,23 +5,23 @@ import Imgg from "../../../../../assets/Image/Imge33.jpg";
 const Header: React.FC = () => {
   return (
     <>
-      
-      <header className="relative min-h-screen flex items-center justify-center text-center bg-cover bg-fixed "
-        style={{ backgroundImage: `url(${bgImg})` }}>
-        <div className="w-full lg:w-2/3  lg:text-center mt-4 lg:mt-0 ml-4 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl  lg:text-5xl font-bold text-white mb-6 mt-4">
+      <header 
+        className="relative min-h-screen flex items-center justify-start bg-cover bg-fixed"
+        style={{ backgroundImage: `url(${bgImg})` }}
+      >
+        <div className="w-full lg:w-2/3 text-left px-4 sm:px-8 lg:px-16">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Cybersecurity Services
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white mb-4">
             Bridging the Gap Between Risk and Resilience
           </p>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white mt-2">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white">
             Protect your digital assets with our cutting-edge solutions.
           </p>
         </div>
       </header>
 
-      
       <section className="relative flex flex-col lg:flex-row items-center justify-center px-4 sm:px-8 lg:px-16 py-12 space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="relative w-full lg:w-1/2 h-[400px] lg:h-[565px] group">
           <img
@@ -41,7 +41,6 @@ const Header: React.FC = () => {
                 to identify vulnerabilities, ensure compliance, and fortify your
                 defenses.
               </p>
-              
             </div>
           </div>
         </div>

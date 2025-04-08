@@ -5,6 +5,7 @@ import Services from "../ui/home/services/Services";
 import CompliancePage from "../ui/home/Compliance/ComplianceCard";
 import HeroSection from "../ui/home/hsection/HeroSection";
 import Footer from "../Footer";
+import TestimonialsPage from "../ui/home/Testimonials/TestimonialsPage";
 
 const Home: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const Home: React.FC = () => {
       <About />
       <Services />
       <CompliancePage />
+      <TestimonialsPage />
       <HeroSection />
       <Footer />
     </div>
