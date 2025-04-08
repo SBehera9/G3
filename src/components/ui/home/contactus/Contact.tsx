@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-start space-x-4">
+          {/* <div className="flex items-start space-x-4">
             <div className="bg-white text-black p-4 rounded-md">
               <Phone />
             </div>
@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
               <p className="font-semibold text-teal-400 text-lg">Phone:</p>
               <p>+91 99446 46365</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex items-start space-x-4">
             <div className="bg-white text-black p-4 rounded-md">
@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
             </div>
             <div>
               <p className="font-semibold text-teal-400 text-lg">Email:</p>
-              <p>info@privintech.com</p>
+              <p>info@g3cyberspace.com</p>
             </div>
           </div>
         </div>
