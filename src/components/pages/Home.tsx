@@ -12,7 +12,6 @@ import Footer from "../Footer";
 const Home: React.FC = () => {
   return (
     <html lang="en" className="bg-white !scroll-smooth">
-      {/* Hero Section */}
       <div
         className="relative flex items-center justify-center text-center bg-cover bg-fixed h-screen sm:h-[75vh] md:h-[85vh] lg:h-screen"
         style={{ backgroundImage: `url(${Img})` }}>
@@ -26,7 +25,6 @@ const Home: React.FC = () => {
       </div>
 
       
-      {/* Other Sections */}
       <About />
       <Services />
       <CompliancePage />

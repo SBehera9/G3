@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   const handleNavigateToForm = () => {
-    navigate("/contact-form"); // Adjust the route as per your routing setup
+    navigate("/contact"); 
   };
 
   return (

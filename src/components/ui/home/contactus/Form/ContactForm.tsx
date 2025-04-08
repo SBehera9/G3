@@ -1,131 +1,100 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import axios from "axios";
-import Img from "../../../../../assets/Image/img30.jpg";
 import { useNavigate } from "react-router-dom";
 
 interface FormData {
   name: string;
   email: string;
-  companyname: string;
-  countryname: string;
+  subject: string;
   message: string;
 }
 
-interface ContactFormProps {
-  bgClassName?: string;
-}
-
-const ContactForm: React.FC<ContactFormProps> = ({ bgClassName = "bg-slate-500" }) => {
+const ContactForm: React.FC = () => {
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm<FormData>();
+
   const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     try {
       await axios.post("http://localhost:5000/api/contact", data);
-      alert("Form submitted successfully!"); 
-      reset(); 
-      navigate("/contact");
+      alert("Form submitted successfully!");
+      reset();
+      navigate("/contact-form");
     } catch (error) {
       console.error("Error sending message:", error);
-      alert("Failed to submit the form. Please try again."); 
+      alert("Failed to submit the form. Please try again.");
     }
   };
 
-  
   return (
-    <div className={`flex items-center justify-center p-9 py-12 min-h-screen bg-fixed bg-cover ${bgClassName}`}
-    style={{ backgroundImage: `url(${Img})` }}>
+    <div className="bg-black">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="bg-transparent space-y-5 "
+      >
+        <input
+          type="text"
+          {...register("name", {
+            required: "Name is required",
+            minLength: { value: 3, message: "Name must be at least 3 characters" },
+          })}
+          placeholder="Your Name"
+          className="w-full p-3 py-5 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+        />
+        {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
 
-      <div className="bg-transparent p-4 w-[500px]">
-        <form className="space-y-6 flex-row md:flex-col" onSubmit={handleSubmit(onSubmit)}>
+        <input
+          type="email"
+          {...register("email", {
+            required: "Email is required",
+            pattern: {
+              value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+              message: "Invalid email address",
+            },
+          })}
+          placeholder="Your Email"
+          className="w-full p-3 py-5 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+        />
+        {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
 
-          <div>
-            <label className="block text-sm font-medium text-white">Name</label>
-            <input
-              type="text"
-              {...register("name", { required: "Name is required", minLength: { value: 3, message: "Name must be at least 3 characters" } })}
-              placeholder="Your Name"
-              className={`w-full px-4 py-2 border bg-transparent rounded-md bg-white focus:outline-none focus:ring ${
-                errors.name ? "border-red-500" : "focus:ring-teal-100"
-              } mt-1`}
-            />
-            {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
-          </div>
+        <input
+          type="text"
+          {...register("subject", {
+            required: "Subject is required",
+            minLength: { value: 3, message: "Subject must be at least 3 characters" },
+          })}
+          placeholder="Subject"
+          className="w-full p-3 py-5 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+        />
+        {errors.subject && <p className="text-red-500 text-sm">{errors.subject.message}</p>}
 
-          <div>
-            <label className="block text-sm font-medium text-white">Business Email address</label>
-            <input
-              type="email"
-              {...register("email", {
-                required: "Email is required",
-                pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Invalid email address" },
-              })}
-              placeholder="Your Email"
-              className={`w-full px-4 py-2 border bg-transparent rounded-md bg-white focus:outline-none focus:ring ${
-                errors.email ? "border-red-500" : "focus:ring-teal-300"
-              } mt-1`}
-            />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
-          </div>
+        <textarea
+          rows={4}
+          {...register("message", { required: "Message is required" })}
+          placeholder="Your Message"
+          className="w-full p-3 py-7 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+        ></textarea>
+        {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
 
-          <div>
-            <label className="block text-sm font-medium text-white">Company Name</label>
-            <input
-              type="text"
-              {...register("companyname", { required: "Company Name is required", minLength: { value: 3, message: "Company Name must be at least 3 characters" } })}
-              placeholder="Company Name"
-              className={`w-full px-4 py-2 border bg-transparent rounded-md bg-white focus:outline-none focus:ring ${
-                errors.companyname ? "border-red-500" : "focus:ring-teal-300"
-              } mt-1`}
-            />
-            {errors.companyname && <p className="text-red-500 text-sm mt-1">{errors.companyname.message}</p>}
-          </div>
+        <button
+          type="submit"
+          className="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-5 w-full rounded-md transition duration-200"
+        >
+          Send Message
+        </button>
 
-          <div>
-            <label className="block text-sm font-medium text-white">Country</label>
-            <input
-              type="text"
-              {...register("countryname", { required: "Country is required", minLength: { value: 3, message: "Country Name must be at least 3 characters" } })}
-              placeholder="Enter Country Name"
-              className={`w-full px-4 py-2 border bg-transparent rounded-md bg-white focus:outline-none focus:ring ${
-                errors.countryname ? "border-red-500" : "focus:ring-teal-300"
-              } mt-1`}
-            />
-            {errors.countryname && <p className="text-red-500 text-sm mt-1">{errors.countryname.message}</p>}
-          </div>
-
-
-          <div>
-            <label className="block text-sm font-medium text-white">How can we help you with?</label>
-            <textarea
-              rows={4}
-              {...register("message", { required: "Message is required" })}
-              placeholder="Your Message"
-              className={`w-full px-4 py-1 border bg-transparent rounded-md bg-white focus:outline-none focus:ring ${
-                errors.message ? "border-red-500" : "focus:ring-teal-300"
-              } mt-1`}
-            ></textarea>
-            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
-          </div>
-
-          <div className="flex justify-center items-center">
-          <button
-            type="submit"
-            className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 focus:outline-none focus:ring focus:ring-teal-300"
-          >
-            Submit
-          </button>
-          </div>
-        </form>
+        <p className="text-blue-400 text-sm text-center underline mt-2 cursor-pointer">
+          Privacy Notice
+        </p>
+      </form>
       </div>
-    </div>
   );
 };
 
-export default ContactForm;
+export default ContactForm;
