@@ -68,10 +68,8 @@ const TestimonialsPage: React.FC = () => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-
     checkIfMobile();
     window.addEventListener('resize', checkIfMobile);
-
     return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
 
@@ -98,7 +96,7 @@ const TestimonialsPage: React.FC = () => {
       {[...Array(5)].map((_, i) => (
         <svg
           key={i}
-          className={`w-5 h-5 ${i < rating ? 'text-yellow-400' : 'text-gray-300'}`}
+          className={`w-5 h-5 ${i < rating ? 'text-[#4096B5]' : 'text-gray-300'}`}
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -109,18 +107,17 @@ const TestimonialsPage: React.FC = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-6 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white px-4 py-10 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
-            Client Testimonials
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#4096B5]">
+            What Our Clients Say
           </h1>
-          <p className="mt-3 text-sm sm:text-base text-gray-600">
-            Don&apos;t just take our word for it. Here&apos;s what our clients say about working with us.
+          <p className="mt-3 text-gray-600 text-base sm:text-lg">
+            Real experiences from real clients. See why they trust us.
           </p>
         </div>
 
-        {/* Featured Testimonial */}
         <div className="mb-12">
           <AnimatePresence mode="wait">
             <motion.div
@@ -129,34 +126,31 @@ const TestimonialsPage: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden"
+              className="bg-white border border-gray-200 rounded-2xl shadow-xl p-6 md:p-10"
             >
-              <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/3 bg-gray-100 p-6 flex flex-col items-center justify-center">
+              <div className="flex flex-col md:flex-row gap-6 items-center">
+                <div className="w-full md:w-1/3 flex flex-col items-center text-center md:text-left">
                   <img
                     src={activeTestimonial.logo}
                     alt={activeTestimonial.company}
-                    className="max-h-20 md:max-h-24 w-auto object-contain"
-                    loading="lazy"
+                    className="h-20 w-auto object-contain mb-4"
                   />
-                  <div className="text-center mt-4">
-                    <p className="text-base font-medium text-gray-900">{activeTestimonial.clientName}</p>
-                    <p className="text-sm text-gray-600">{activeTestimonial.role}</p>
+                  <div>
+                    <p className="text-lg font-semibold text-[#4096B5]">{activeTestimonial.clientName}</p>
+                    <p className="text-sm text-gray-500">{activeTestimonial.role}</p>
                     {renderStars(activeTestimonial.rating)}
                   </div>
                 </div>
-                <div className="w-full md:w-2/3 p-6 md:p-10">
-                  <blockquote className="relative">
+                <div className="w-full md:w-2/3 text-gray-700 text-base leading-relaxed">
+                  <blockquote className="italic relative">
                     <svg
-                      className="absolute -top-3 -left-5 w-6 h-6 text-gray-200"
+                      className="absolute -top-2 -left-4 w-6 h-6 text-gray-200"
                       fill="currentColor"
                       viewBox="0 0 32 32"
                     >
                       <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zM25.864 4c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                     </svg>
-                    <p className="text-sm sm:text-base text-gray-700 font-light leading-relaxed">
-                      {activeTestimonial.quote}
-                    </p>
+                    {activeTestimonial.quote}
                   </blockquote>
                 </div>
               </div>
@@ -164,36 +158,31 @@ const TestimonialsPage: React.FC = () => {
           </AnimatePresence>
         </div>
 
-        {/* Logos Carousel */}
-        <h2 className="text-center text-lg sm:text-xl font-semibold text-gray-800 mb-4">
-          Trusted by industry leaders
+        <h2 className="text-center text-xl font-semibold text-[#4096B5] mb-6">
+          Our Trusted Clients
         </h2>
-        <div className="overflow-hidden">
-          <div className="flex space-x-4 overflow-x-auto no-scrollbar px-2 py-2">
+        <div className="overflow-x-auto no-scrollbar">
+          <div className="flex space-x-4 px-2 py-2">
             {testimonials.map((testimonial) => (
               <button
                 key={testimonial.id}
                 onClick={() => handleLogoClick(testimonial)}
-                className={`flex-shrink-0 transition-transform duration-300 ${
+                className={`flex-shrink-0 transition-all duration-300 ${
                   activeTestimonial.id === testimonial.id
-                    ? 'scale-110 opacity-100'
-                    : 'opacity-70 hover:opacity-100 hover:scale-105'
-                }`}
+                    ? 'scale-110 border-2 border-[#4096B5] bg-white shadow-md'
+                    : 'opacity-60 hover:opacity-100'
+                } rounded-xl p-2 w-24 h-16 flex items-center justify-center`}
               >
-                <div className="w-24 h-16 md:w-32 md:h-20 bg-white rounded-lg shadow-sm flex items-center justify-center p-2 md:p-3">
-                  <img
-                    src={testimonial.logo}
-                    alt={testimonial.company}
-                    className="max-h-10 w-auto object-contain"
-                    loading="lazy"
-                  />
-                </div>
+                <img
+                  src={testimonial.logo}
+                  alt={testimonial.company}
+                  className="h-10 object-contain"
+                />
               </button>
             ))}
           </div>
         </div>
 
-        {/* Dots for mobile */}
         {isMobile && (
           <div className="flex justify-center mt-6 space-x-2">
             {testimonials.map((testimonial) => (
@@ -201,7 +190,7 @@ const TestimonialsPage: React.FC = () => {
                 key={`dot-${testimonial.id}`}
                 onClick={() => handleLogoClick(testimonial)}
                 className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                  activeTestimonial.id === testimonial.id ? 'bg-gray-800' : 'bg-gray-300'
+                  activeTestimonial.id === testimonial.id ? 'bg-[#4096B5]' : 'bg-gray-300'
                 }`}
               />
             ))}
