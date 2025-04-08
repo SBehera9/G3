@@ -66,7 +66,7 @@ const PrivacyPolicy: React.FC = () => {
           <h2 className="text-xl sm:text-2xl font-semibold mt-6 mb-4">Contact Details</h2>
           <p className="mb-4">
             If you have any questions regarding this privacy policy or the protection of your personal data, you may reach out to our company representative at
-            <a href="mailto:info@company.com" className="text-blue-600 underline"> info@company.com</a>.
+            <a href="mailto:info@company.com" className="text-[#4096B5] underline"> info@g3cyberspace.com</a>.
           </p>
         </div>
       </div>

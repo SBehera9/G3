@@ -9,7 +9,6 @@ const DataPrivacyFramework: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <PrivacySolutions />
-      {/* Full-width background for the form */}
       <div className="w-full bg-black">
         <div className="flex flex-col sm:flex-row px-6 sm:px-16 lg:px-32 py-6">
           <div className="flex-1 mb-6 sm:mb-0">

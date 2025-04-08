@@ -31,32 +31,28 @@ const ApproachSection: React.FC = () => {
 
   return (
     <div className="bg-transparent py-12">
-      {/* Header Section */}
       <div className="max-w-7xl mx-auto text-center mb-8 px-4 sm:px-6 md:px-8">
-        <h2 className="text-3xl sm:text-4xl text-teal-800 font-bold mb-4">Our Approach</h2>
-        <p className="text-teal-800 text-lg sm:text-xl max-w-3xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl text-[#4096B5] font-bold mb-4">Our Approach</h2>
+        <p className="text-[#4096B5] text-lg sm:text-xl max-w-3xl mx-auto">
           We focus on understanding your objectives from the outset, tailoring our process to support your vision and
           prepare for critical milestones ahead. Collaboration, clear communication, and strategic planning are integral
           to how we work, ensuring each project progresses efficiently and effectively.
         </p>
       </div>
 
-      {/* Timeline Section */}
       <div className="flex justify-center items-center relative mb-12 px-4 sm:px-6 md:px-8">
         <div className="flex items-center justify-between w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
           {steps.map((step, index) => (
             <div key={step.id} className="flex items-center">
-              {/* Circle */}
               <div
-                onClick={() => setActiveStep(step.id)} // Update the active step on click
+                onClick={() => setActiveStep(step.id)} 
                 className={`w-10 h-10 rounded-full ${
-                  activeStep === step.id ? "bg-teal-800 text-white" : "bg-gray-300 text-gray-600"
+                  activeStep === step.id ? "bg-[#4096B5] text-white" : "bg-gray-300 text-gray-600"
                 } flex justify-center items-center font-bold text-lg cursor-pointer`}
               >
                 {step.id}
               </div>
 
-              {/* Line */}
               {index < steps.length - 1 && (
                 <div className="w-12 h-1 bg-gray-300 mx-2"></div>
               )}
@@ -65,17 +61,14 @@ const ApproachSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Step Details */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
         {steps
-          .filter((step) => step.id === activeStep) // Show only the active step
+          .filter((step) => step.id === activeStep) 
           .map((step) => (
             <div key={step.id} className="border-b-2 pb-4 mb-4 shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
-                <h3 className="text-xl sm:text-2xl font-bold text-teal-800 mb-3">{step.title}</h3>
-                <p className="text-teal-800 text-base sm:text-lg">{step.description}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-[#4096B5] mb-3">{step.title}</h3>
+                <p className="text-[#4096B5] text-base sm:text-lg">{step.description}</p>
             </div>
-
-
           ))}
       </div>
     </div>

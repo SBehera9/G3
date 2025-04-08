@@ -3,10 +3,10 @@ import React from "react";
 const BusinessGrowthSection: React.FC = () => {
   return (
     <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gray-100 rounded-lg shadow-md mb-10">
-      <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-teal-800">
+      <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-[#4096B5]">
         Vision
       </h1>
-      <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-teal-800">
+      <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-54 sm:mb-6 text-[#4096B5]">
         Driving Business Growth Through Technology and Compliance
       </h2>
       <p className="mb-4 text-sm sm:text-base lg:text-lg">
@@ -16,21 +16,21 @@ const BusinessGrowthSection: React.FC = () => {
         Our expertise and technology-driven solutions simplify these processes, empowering your business to:
       </p>
       <ul className="space-y-4">
-        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-teal-800 overflow-hidden">
-          <span className="absolute inset-0 bg-teal-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
-          <span className="relative z-10 text-teal-800 group-hover:text-white transition-colors duration-500">
+        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-[#4096B5] overflow-hidden">
+          <span className="absolute inset-0 bg-[#4096B5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
+          <span className="relative z-10 text-[#4096B5] group-hover:text-white transition-colors duration-500">
             <strong>Protect sensitive data:</strong> Advanced cybersecurity measures safeguard your information.
           </span>
         </li>
-        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-teal-800 overflow-hidden">
-          <span className="absolute inset-0 bg-teal-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
-          <span className="relative z-10 text-teal-800 group-hover:text-white transition-colors duration-500">
+        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-[#4096B5] overflow-hidden">
+          <span className="absolute inset-0 bg-[#4096B5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
+          <span className="relative z-10 text-[#4096B5] group-hover:text-white transition-colors duration-500">
             <strong>Stay compliant:</strong> Ensure adherence to industry regulations and global standards.
           </span>
         </li>
-        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-teal-800 overflow-hidden">
-          <span className="absolute inset-0 bg-teal-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
-          <span className="relative z-10 text-teal-800 group-hover:text-white transition-colors duration-500">
+        <li className="group relative bg-white shadow-sm p-4 border-l-4 border-[#4096B5] overflow-hidden">
+          <span className="absolute inset-0 bg-[#4096B5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"></span>
+          <span className="relative z-10 text-[#4096B5] group-hover:text-white transition-colors duration-500">
             <strong>Reduce operational risks:</strong> Enhance trust with stakeholders and improve resilience.
           </span>
         </li>

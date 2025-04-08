@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../assets/Image/img4.png";
+import Logo from "../assets/Image/Logo12.png";
 
 const NavbarMobile: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,43 +31,42 @@ const NavbarMobile: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-teal-700 text-white shadow-lg">
+    <header className="fixed top-0 w-full z-50 bg-white text-[#4096B5] shadow-lg">
       <div className="flex items-center justify-between px-5 py-4">
         <Link to="/">
           <img src={Logo} alt="Logo" className="h-12 w-48" />
         </Link>
-        <button onClick={toggleMenu} className="text-2xl">
+        <button onClick={toggleMenu} className="text-2xl text-[#4096B5]">
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
       {isMenuOpen && (
-        <nav className="bg-teal-700">
+        <nav className="bg-white">
           <ul className="text-base">
             <li>
               <Link
                 to="/"
-                className="block px-5 py-3 hover:bg-teal-600"
+                className="block px-5 py-3 hover:bg-gray-100"
                 onClick={toggleMenu}
               >
                 Home
               </Link>
             </li>
 
-            {/* About Dropdown */}
             <li>
               <div
-                className="block px-5 py-3 hover:bg-teal-600 cursor-pointer"
+                className="block px-5 py-3 hover:bg-gray-100 cursor-pointer"
                 onClick={() => handleDropdown("about")}
               >
                 About
               </div>
               {openDropdown === "about" && (
-                <ul className="bg-teal-800">
+                <ul className="bg-gray-50">
                   <li>
                     <Link
                       to="/aboutus"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       About Us
@@ -76,7 +75,7 @@ const NavbarMobile: React.FC = () => {
                   <li>
                     <Link
                       to="/career"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       Career
@@ -86,29 +85,28 @@ const NavbarMobile: React.FC = () => {
               )}
             </li>
 
-            {/* Services Dropdown */}
             <li>
               <div
-                className="block px-5 py-3 hover:bg-teal-600 cursor-pointer"
+                className="block px-5 py-3 hover:bg-gray-100 cursor-pointer"
                 onClick={() => handleDropdown("services")}
               >
                 Services
               </div>
               {openDropdown === "services" && (
-                <ul className="bg-teal-800">
+                <ul className="bg-gray-50">
                   <li>
                     <div
-                      className="block px-5 py-2 hover:bg-teal-600 cursor-pointer"
+                      className="block px-8 py-2 hover:bg-gray-100 cursor-pointer"
                       onClick={() => handleNestedDropdown("consulting")}
                     >
                       Consulting Services
                     </div>
                     {nestedDropdown === "consulting" && (
-                      <ul className="bg-teal-900">
+                      <ul className="bg-gray-100">
                         <li>
                           <Link
                             to="/cyber-security"
-                            className="block px-5 py-2 hover:bg-teal-600"
+                            className="block px-12 py-2 hover:bg-gray-200"
                             onClick={toggleMenu}
                           >
                             Cyber Security
@@ -116,17 +114,17 @@ const NavbarMobile: React.FC = () => {
                         </li>
                         <li>
                           <div
-                            className="block px-5 py-2 hover:bg-teal-600 cursor-pointer"
+                            className="block px-12 py-2 hover:bg-gray-200 cursor-pointer"
                             onClick={() => handleNestedPrivacyDropdown("data-privacy")}
                           >
                             Data Privacy
                           </div>
                           {nestedPrivacyDropdown === "data-privacy" && (
-                            <ul className="bg-teal-900">
+                            <ul className="bg-gray-200">
                               <li>
                                 <Link
                                   to="/implementation"
-                                  className="block px-5 py-2 hover:bg-teal-600"
+                                  className="block px-16 py-2 hover:bg-gray-300"
                                   onClick={toggleMenu}
                                 >
                                   Framework Implementation
@@ -135,7 +133,7 @@ const NavbarMobile: React.FC = () => {
                               <li>
                                 <Link
                                   to="/privacyregulation"
-                                  className="block px-5 py-2 hover:bg-teal-600"
+                                  className="block px-16 py-2 hover:bg-gray-300"
                                   onClick={toggleMenu}
                                 >
                                   Privacy Regulation
@@ -149,17 +147,17 @@ const NavbarMobile: React.FC = () => {
                   </li>
                   <li>
                     <div
-                      className="block px-5 py-2 hover:bg-teal-600 cursor-pointer"
+                      className="block px-8 py-2 hover:bg-gray-100 cursor-pointer"
                       onClick={() => handleNestedDropdown("assessment")}
                     >
                       Assessment
                     </div>
                     {nestedDropdown === "assessment" && (
-                      <ul className="bg-teal-900">
+                      <ul className="bg-gray-100">
                         <li>
                           <Link
                             to="/privacyass"
-                            className="block px-5 py-2 hover:bg-teal-600"
+                            className="block px-12 py-2 hover:bg-gray-200"
                             onClick={toggleMenu}
                           >
                             Privacy Assessments
@@ -168,7 +166,7 @@ const NavbarMobile: React.FC = () => {
                         <li>
                           <Link
                             to="/cybersecurityass"
-                            className="block px-5 py-2 hover:bg-teal-600"
+                            className="block px-12 py-2 hover:bg-gray-200"
                             onClick={toggleMenu}
                           >
                             Cybersecurity Assessments
@@ -180,7 +178,7 @@ const NavbarMobile: React.FC = () => {
                   <li>
                     <Link
                       to="/professional"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       Professional Services
@@ -189,7 +187,7 @@ const NavbarMobile: React.FC = () => {
                   <li>
                     <Link
                       to="/vapt"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       VAPT
@@ -198,7 +196,7 @@ const NavbarMobile: React.FC = () => {
                   <li>
                     <Link
                       to="/security-privacy"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       Security & Privacy Standards
@@ -208,20 +206,19 @@ const NavbarMobile: React.FC = () => {
               )}
             </li>
 
-            {/* Products Dropdown */}
             <li>
               <div
-                className="block px-5 py-3 hover:bg-teal-600 cursor-pointer"
+                className="block px-5 py-3 hover:bg-gray-100 cursor-pointer"
                 onClick={() => handleDropdown("products")}
               >
                 Our Products
               </div>
               {openDropdown === "products" && (
-                <ul className="bg-teal-800">
+                <ul className="bg-gray-50">
                   <li>
                     <Link
                       to="/soltrisk"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       Soltrisk
@@ -231,20 +228,19 @@ const NavbarMobile: React.FC = () => {
               )}
             </li>
 
-             {/* Resources Dropdown */}
-             <li>
+            <li>
               <div
-                className="block px-5 py-3 hover:bg-teal-600 cursor-pointer"
+                className="block px-5 py-3 hover:bg-gray-100 cursor-pointer"
                 onClick={() => handleDropdown("resources")}
               >
                 Resources
               </div>
               {openDropdown === "resources" && (
-                <ul className="bg-teal-800">
+                <ul className="bg-gray-50">
                   <li>
                     <Link
                       to="//"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       Blog
@@ -253,7 +249,7 @@ const NavbarMobile: React.FC = () => {
                   <li>
                     <Link
                       to="//"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       Policies
@@ -262,7 +258,7 @@ const NavbarMobile: React.FC = () => {
                   <li>
                     <Link
                       to="//"
-                      className="block px-5 py-2 hover:bg-teal-600"
+                      className="block px-8 py-2 hover:bg-gray-100"
                       onClick={toggleMenu}
                     >
                       Case Studies
@@ -272,11 +268,10 @@ const NavbarMobile: React.FC = () => {
               )}
             </li>
 
-            {/* Contact Us */}
             <li>
               <Link
                 to="/contact"
-                className="block px-5 py-3 hover:bg-teal-600"
+                className="block px-5 py-3 hover:bg-gray-100"
                 onClick={toggleMenu}
               >
                 Contact Us

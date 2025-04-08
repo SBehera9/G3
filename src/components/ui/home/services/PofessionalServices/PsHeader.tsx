@@ -15,7 +15,7 @@ const HeadSection: React.FC = () => {
           Expert guidance for security & compliance
         </p>
         <div className="text-center sm:text-left py-6">
-          <button className="bg-teal-600 hover:bg-teal-900 text-white font-bold py-3 px-6 rounded-lg">
+          <button className="bg-[#4096B5] hover:bg-[#4682B4] text-white font-bold py-3 px-6 rounded-lg">
             VIEW SERVICES
           </button>
         </div>

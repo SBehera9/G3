@@ -50,7 +50,7 @@ const features = [
 const KfGrid: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24 py-10">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center sm:text-left text-teal-800">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center sm:text-left text-[#4096B5]">
         Key Features of Our Services
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">

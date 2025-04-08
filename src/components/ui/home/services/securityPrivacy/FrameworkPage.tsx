@@ -15,7 +15,7 @@ const FrameworkPage: React.FC = () => {
           <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl">
             Seamless Implementation Services for Compliance and Security Frameworks
           </p>
-          <button className="mt-6 px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-3 bg-teal-800 text-white text-sm sm:text-base md:text-lg font-medium rounded-md hover:bg-teal-600">
+          <button className="mt-6 px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-3 bg-[#4096B5] text-white text-sm sm:text-base md:text-lg font-medium rounded-md hover:bg-teal-600">
             View Services
           </button>
         </div>
