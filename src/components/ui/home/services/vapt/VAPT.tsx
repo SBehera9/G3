@@ -19,9 +19,7 @@ const VAPT: React.FC = () => {
                     VULNERABILITY<br />ASSESSMENT AND<br />PENETRATION TESTING
                 </div>
                 </div>
-
-               
-                <div className="w-[100%] sm:w-[50%] sm:mt-8 md:mt-12 lg:mt-16">
+                <div className="w-[100%] sm:w-[50%] sm:mt-8 md:mt-12 lg:mt-24">
                 <ContactForm />
                 </div>
                 </div>

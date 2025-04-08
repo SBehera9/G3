@@ -14,7 +14,7 @@ const DataPrivacyFramework: React.FC = () => {
           <div className="flex-1 mb-6 sm:mb-0">
             <h2 className="text-3xl sm-text-5xl font-bold text-white">Get in touch</h2>
           </div>
-          <div className="w-[100%] sm-w-[50%]">
+          <div className="w-[100%] md:w-[50%]">
           <ContactForm/>
           </div>
         </div>

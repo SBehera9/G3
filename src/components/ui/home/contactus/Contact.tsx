@@ -1,12 +1,13 @@
 import React from "react";
 import { MapPin, Phone, Mail } from "lucide-react";
 import ContactForm from "./ContactForm";
+import Footer from "../../../Footer";
 
 const Contact: React.FC = () => {
   return (
-    <div className="bg-black text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 min-h-screen">
+    <>
+    <div className="bg-black text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 min-h-screen mt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        
         <div className="space-y-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
             Drop Us A Message <br /> For Any Query
@@ -48,6 +49,8 @@ const Contact: React.FC = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

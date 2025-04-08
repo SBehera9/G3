@@ -34,7 +34,6 @@ const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-      {/* Name */}
       <div>
         <input
           type="text"
@@ -48,7 +47,6 @@ const ContactForm: React.FC = () => {
         {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
       </div>
 
-      {/* Email */}
       <div>
         <input
           type="email"
@@ -65,7 +63,6 @@ const ContactForm: React.FC = () => {
         {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
       </div>
 
-      {/* Subject */}
       <div>
         <input
           type="text"
@@ -79,7 +76,6 @@ const ContactForm: React.FC = () => {
         {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
       </div>
 
-      {/* Message */}
       <div>
         <textarea
           rows={4}
@@ -90,7 +86,6 @@ const ContactForm: React.FC = () => {
         {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
       </div>
 
-      {/* Submit Button */}
       <button
         type="submit"
         className="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-4 w-full rounded-md transition duration-200"
