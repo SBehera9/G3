@@ -48,7 +48,7 @@ const Services: React.FC = () => {
               <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-4 lg:mb-6 animate-slidein text-700 text-[#4096B5] group-hover:text-white transition-colors duration-500">
                 {service.title}
               </h2>
-              <p className="text-sm sm:text-base lg:text-lg text-700  text-[#4096B5] animate-slidein group-hover:text-white transition-colors duration-500">
+              <p className="text-sm sm:text-base lg:text-lg text-700  text-black animate-slidein group-hover:text-white transition-colors duration-500">
                 {service.description}
               </p>
             </div>

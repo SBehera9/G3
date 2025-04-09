@@ -80,7 +80,7 @@ const ClientsMarquee: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-54 sm:mb-6 text-center text-800 text-[#4096B5] mb-4">Our Clients</h2>
-          <p className="mt-3 max-w-2xl mx-auto text-lg text-[#4096B5]">
+          <p className="mt-3 max-w-2xl mx-auto text-lg text-black">
             Trusted by industry leaders worldwide
           </p>
         </div>

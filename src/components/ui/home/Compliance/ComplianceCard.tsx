@@ -9,7 +9,7 @@ const ComplianceCard: React.FC<{ title: string; image: string }> = ({ title, ima
   return (
     <div className="w-full sm:w-48 h-48 border-[#4096B5] border-2 bg-white rounded-lg shadow-[5px_5px_5px_#4096B5] p-4 transform transition duration-300 hover:scale-105 hover:shadow-2xl text-center flex flex-col items-center justify-center animate-slidein mt-0">
       <img src={image} alt={title} className="w-24 h-24 object-contain mb-4 animate-slidein"/>
-      <h3 className="text-lg font-semibold text-800 text-[#4096B5] animate-slidein">{title}</h3>
+      <h3 className="text-lg font-semibold text-800 text-black animate-slidein">{title}</h3>
     </div>
   );
 };

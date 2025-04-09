@@ -15,7 +15,6 @@ const PofessionalServices: React.FC = () => {
       <ESL />
       <KfGrid />
 
-      {/* Contact Form Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-6 sm:p-10">
         <div className="flex items-center">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#4096B5]">

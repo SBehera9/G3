@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-white !scroll-smooth">
       <div
-        className="relative flex items-center justify-start h-screen sm:h-[75vh] md:h-[85vh] lg:h-screen bg-cover bg-fixed bg-center"
+        className="relative flex items-center justify-start h-screen sm:h-[75vh] md:h-[85vh] lg:h-[600px] bg-cover bg-fixed bg-center"
         style={{ backgroundImage: `url(${Img})` }}
       >
         <div className="absolute inset-0 bg-black/30"></div> 

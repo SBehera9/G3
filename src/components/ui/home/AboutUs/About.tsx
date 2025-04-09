@@ -9,7 +9,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 sm:mb-6 text-center">
             About Us
           </h2>
-          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center">
+          <p className="text-sm sm:text-base md:text-lg leading-relaxed text-center text-black">
             At G3 Cyberspace, we specialize in empowering businesses with comprehensive solutions in cybersecurity, data privacy, and regulatory compliance.
             With our expertise spanning consulting, assessments, and professional services, we help organizations confidently navigate the complex landscape of
             digital security and compliance standards.

@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
         <button
               type="button"
               onClick={() => window.open('', '_blank')}
-              className="bg-white text-[#4096B5] px-6 py-2 rounded-lg hover:bg-[#4096B5] hover:text-white focus:outline-none focus:ring focus:ring-[#4096B5] mt-2">
+              className="bg-white text-[#4096B5] px-6 py-2 rounded-lg hover:bg-[#4096B5] hover:text-white focus:outline-none focus:ring focus:ring-[#2471a3] mt-2">
               Book now
             </button>
       </div>

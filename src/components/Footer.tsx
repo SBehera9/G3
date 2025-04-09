@@ -15,16 +15,16 @@ const Footer: React.FC = () => {
           />
           <p className="font-semibold">Follow Us</p>
           <div className="flex space-x-4 mt-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#4096B5]">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#2471a3]">
               <FaFacebook size={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#4096B5]">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#2471a3]">
               <FaTwitter size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#4096B5]">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#2471a3]">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#4096B5]">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-[#2471a3]">
               <FaInstagram size={24} />
             </a>
           </div>
@@ -33,44 +33,44 @@ const Footer: React.FC = () => {
         <div className="md:col-span-1">
           <h3 className="font-bold text-xl mb-4">Know More</h3>
           <ul className="space-y-2">
-            <li><Link to="/" className="hover:text-300 hover:text-[#4096B5]">Home</Link></li>
-            <li><Link to="//" className="hover:text-300 hover:text-[#4096B5]">Startup Solutions</Link></li>
-            <li><Link to="//" className="hover:text-300 hover:text-[#4096B5]">Blog</Link></li>
-            <li><Link to="/contact" className="hover:text-300 hover:text-[#4096B5]">Contact Us</Link></li>
-            <li><Link to="/privacy-policy" className="hover:text-300 hover:text-[#4096B5]">Privacy Policy</Link></li>
+            <li><Link to="/" className="hover:text-300 hover:text-[#2471a3]">Home</Link></li>
+            <li><Link to="//" className="hover:text-300 hover:text-[#2471a3]">Startup Solutions</Link></li>
+            <li><Link to="//" className="hover:text-300 hover:text-[#2471a3]">Blog</Link></li>
+            <li><Link to="/contact" className="hover:text-300 hover:text-[#2471a3]">Contact Us</Link></li>
+            <li><Link to="/privacy-policy" className="hover:text-300 hover:text-[#2471a3]">Privacy Policy</Link></li>
           </ul>
         </div>
 
         <div className="md:col-span-1">
           <h3 className="font-bold text-xl mb-4">Automations</h3>
           <ul className="space-y-2">
-            <li><Link to="/implementation" className="hover:text-300 hover:text-[#4096B5]">Framework</Link></li>
-            <li><Link to="//" className="hover:text-300 hover:text-[#4096B5]">TPRM</Link></li>
-            <li><Link to="/privacyregulation" className="hover:text-300 hover:text-[#4096B5]">Data Privacy</Link></li>
-            <li><Link to="//" className="hover:text-300 hover:text-[#4096B5]">Customer Centric</Link></li>
-            <li><Link to="//" className="hover:text-300 hover:text-[#4096B5]">Compliance (c3)</Link></li>
-            <li><Link to="//" className="hover:text-300 hover:text-[#4096B5]">Statutory Compliance</Link></li>
-            <li><Link to="//" className="hover:text-300 hover:text-[#4096B5]">Risk Management</Link></li>
+            <li><Link to="/implementation" className="hover:text-300 hover:text-[#2471a3]">Framework</Link></li>
+            <li><Link to="//" className="hover:text-300 hover:text-[#2471a3]">TPRM</Link></li>
+            <li><Link to="/privacyregulation" className="hover:text-300 hover:text-[#2471a3]">Data Privacy</Link></li>
+            <li><Link to="//" className="hover:text-300 hover:text-[#2471a3]">Customer Centric</Link></li>
+            <li><Link to="//" className="hover:text-300 hover:text-[#2471a3]">Compliance (c3)</Link></li>
+            <li><Link to="//" className="hover:text-300 hover:text-[#2471a3]">Statutory Compliance</Link></li>
+            <li><Link to="//" className="hover:text-300 hover:text-[#2471a3]">Risk Management</Link></li>
           </ul>
         </div>
 
         <div className="md:col-span-1">
           <h3 className="font-bold text-xl mb-4">Frameworks</h3>
           <ul className="space-y-2">
-            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#4096B5]">ISO 27001</Link></li>
-            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#4096B5]">ISO 27701</Link></li>
-            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#4096B5]">SOC 2</Link></li>
-            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#4096B5]">HIPAA</Link></li>
-            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#4096B5]">PCI-DSS</Link></li>
-            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#4096B5]">GDPR</Link></li>
-            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#4096B5]">ISO 42001</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#2471a3]">ISO 27001</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#2471a3]">ISO 27701</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#2471a3]">SOC 2</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#2471a3]">HIPAA</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#2471a3]">PCI-DSS</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#2471a3]">GDPR</Link></li>
+            <li><Link to="/security-privacy" className="hover:text-300 hover:text-[#2471a3]">ISO 42001</Link></li>
           </ul>
         </div>
 
         <div className="md:col-span-1">
           <h3 className="font-bold text-xl mb-4">Reach Us</h3>
           
-          <p>Email us: <a href="mailto:sales@soltrisk-io" className="hover:text-300 hover:text-[#4096B5]">info@g3cyberspace.com</a></p>
+          <p>Email us: <a href="mailto:sales@soltrisk-io" className="hover:text-300 hover:text-[#2471a3] curser-pointer">info@g3cyberspace.com</a></p>
         </div>
 
       </div>
