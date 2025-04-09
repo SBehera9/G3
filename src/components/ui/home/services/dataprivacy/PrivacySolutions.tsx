@@ -56,10 +56,10 @@ const PrivacySolutions: React.FC = () => {
   return (
     <section className="bg-gray-50 py-12 px-4 sm:px-8 lg:px-16">
       <div className="text-left mb-12">
-        <p className="text-sm font-bold text-teal-600 uppercase">
+        <p className="text-sm font-bold text-[#4096B5] uppercase">
           Privacy Solutions
         </p>
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-teal-800 mb-2">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#4096B5] mb-2">
           Empowering compliance and trust
         </h2>
       </div>

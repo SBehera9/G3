@@ -17,7 +17,7 @@ const ESLcard: React.FC<ESLcardProps> = ({ title, description, backgroundImage }
         <div className="absolute  bg-white flex justify-center items-center text-[#4096B5] p-4">
           <div className="text-center">
             <h2 className="text-2xl font-semibold">{title}</h2>
-            <p className="mt-2">{description}</p>
+            <p className="mt-2 text-black">{description}</p>
           </div>
         </div>
         

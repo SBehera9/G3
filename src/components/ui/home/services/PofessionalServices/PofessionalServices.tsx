@@ -7,21 +7,27 @@ import KfGrid from "./KfGrid";
 import ContactForm from "../../contactus/ContactForm";
 import Footer from "../../../../Footer";
 
-
-const PofessionalServices : React.FC = () => {
+const PofessionalServices: React.FC = () => {
   return (
-    <div className="font-sans ">
-     <PsHeader/>
-     <ExpertSl/>
-     <ESL/>
-     <KfGrid/>
-     <div className="w-full border-2 border-teal-950"></div>
-     <div className="grid grid-cols-2 bg-black p-10">
-      <div></div>  
-      <ContactForm />
-      </div> 
-     <Footer />
-     
+    <div className="font-sans">
+      <PsHeader />
+      <ExpertSl />
+      <ESL />
+      <KfGrid />
+
+      {/* Contact Form Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-6 sm:p-10">
+        <div className="flex items-center">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#4096B5]">
+            Get in touch
+          </h2>
+        </div>
+        <div className="shadow-lg rounded-xl p-4 bg-white">
+          <ContactForm />
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 };

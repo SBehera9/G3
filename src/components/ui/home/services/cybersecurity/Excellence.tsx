@@ -29,7 +29,7 @@ const Excellence: React.FC = () => {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-54 sm:mb-6 text-center text-[#4096B5] animate-slidein">
           Our key service offerings
         </h2>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-[#4096B5] animate-slidein">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl  animate-slidein text-black">
           Our tailored solutions identify vulnerabilities and fortify your defenses against cyber threats.
         </p>
       </div>
@@ -48,7 +48,7 @@ const Excellence: React.FC = () => {
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#4096B5] mb-4">
             Gap Assessments: Your First Step to Cybersecurity Excellence
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-[#4096B5] mb-4">
+          <p className="text-sm sm:text-base md:text-lg text-black mb-4">
             Uncover hidden vulnerabilities and unlock your organization's true cybersecurity potential.
             <br />
             <br />
@@ -68,7 +68,7 @@ const Excellence: React.FC = () => {
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#4096B5] mb-4">
             Cybersecurity Audits: Uncover, Validate, Secure
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-[#4096B5] mb-4">
+          <p className="text-sm sm:text-base md:text-lg text-black mb-4">
             Strengthen your defenses with a deep dive into your cybersecurity framework.
             <br />
             <br />
@@ -102,7 +102,7 @@ const Excellence: React.FC = () => {
           <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#4096B5] mb-4">
             IS Regulations Compliance: Simplifying Complexity, Ensuring Confidence
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-[#4096B5] mb-4">
+          <p className="text-sm sm:text-base md:text-lg text-black mb-4">
             Achieve seamless compliance with ever-evolving Information Security (IS) regulations.
             <br />
             <br />

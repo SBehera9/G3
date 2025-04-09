@@ -53,7 +53,7 @@ const SoltRisk: React.FC = () => {
                   '_blank'
                 )
               }
-              className="bg-[#4096B5] text-white text-sm sm:text-base px-4 sm:px-6 py-2 rounded-lg hover:bg-[#4682B4] focus:outline-none focus:ring focus:ring-[#4096B5] mt-4"
+              className="bg-[#4096B5] text-white text-sm sm:text-base px-4 sm:px-6 py-2 rounded-lg hover:bg-[#2471a3] focus:outline-none focus:ring focus:ring-[#4096B5] mt-4"
             >
               Visit Our Website
             </button>

@@ -78,7 +78,7 @@ const FrameworkServices: React.FC = () => {
                 <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#4096B5] animate-slidein">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-xs sm:text-sm md:text-base text-[#4096B5] animate-slidein">
+                <p className="mt-2 text-xs sm:text-sm md:text-base text-black animate-slidein">
                   {service.description}
                 </p>
                 

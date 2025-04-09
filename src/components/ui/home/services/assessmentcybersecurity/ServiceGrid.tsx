@@ -26,7 +26,7 @@ const services = [
           <h3 className="text-xl font-bold text-[#4096B5]">{title}</h3>
         </div>
         <div className="border-2 rounded-xl p-4 mt-3 hover:bg-[#4096B5] ">
-          <p className="mt-2 text-[#4096B5] hover:text-[white]">{description}</p>
+          <p className="mt-2 text-black hover:text-[white]">{description}</p>
         </div>
       </div>
     );

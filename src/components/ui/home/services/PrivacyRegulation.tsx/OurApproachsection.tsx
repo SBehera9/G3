@@ -63,7 +63,7 @@ const CollapsibleSection: React.FC = () => {
             </div>
             {openIndex === index && (
               <p
-                className="text-[#4096B5] font-semibold text-base sm:text-lg md:text-xl py-2"
+                className="text-black font-semibold text-base sm:text-lg md:text-xl py-2"
                 data-aos="fade-up" 
               >
                 {item.description}

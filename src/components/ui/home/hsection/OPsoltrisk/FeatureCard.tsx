@@ -19,7 +19,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
           <h3 className="font-bold text-base sm:text-lg lg:text-xl text-[#4096B5] group-hover:text-white">
             {title}
           </h3>
-          <p className="mt-2 text-sm sm:text-base lg:text-lg text-[#4096B5] group-hover:text-white">
+          <p className="mt-2 text-sm sm:text-base lg:text-lg text-black group-hover:text-white">
             {description}
           </p>
         </div>

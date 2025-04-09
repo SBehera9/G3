@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header 
-        className="relative min-h-screen flex items-center justify-start bg-cover bg-fixed"
+        className="relative min-h-[600px] flex items-center justify-start bg-cover bg-fixed"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
         <div className="w-full lg:w-2/3 text-left px-4 sm:px-8 lg:px-16">
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
             alt="Advanced Solutions"
             className="w-full h-full object-cover rounded-lg shadow-md"
           />
-          <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 p-4 sm:p-6 lg:p-8 max-w-sm lg:max-w-md rounded-lg z-10 hidden group-hover:flex transition-opacity duration-300">
+          <div className="absolute inset-0  justify-center items-center bg-black bg-opacity-50 p-4 sm:p-6 lg:p-8 max-w-sm lg:max-w-md rounded-lg z-10 hidden group-hover:flex transition-opacity duration-300">
             <div>
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white">
                 Secure. Comply. Defend.

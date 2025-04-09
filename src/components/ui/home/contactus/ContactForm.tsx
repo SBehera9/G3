@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
             minLength: { value: 3, message: "Name must be at least 3 characters" },
           })}
           placeholder="Your Name"
-          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4096B5]"
         />
         {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
       </div>
@@ -58,7 +58,7 @@ const ContactForm: React.FC = () => {
             },
           })}
           placeholder="Your Email"
-          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4096B5]"
         />
         {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
       </div>
@@ -71,7 +71,7 @@ const ContactForm: React.FC = () => {
             minLength: { value: 3, message: "Subject must be at least 3 characters" },
           })}
           placeholder="Subject"
-          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4096B5]"
         />
         {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
       </div>
@@ -81,21 +81,19 @@ const ContactForm: React.FC = () => {
           rows={4}
           {...register("message", { required: "Message is required" })}
           placeholder="Your Message"
-          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400"
+          className="w-full p-4 rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4096B5]"
         />
         {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
       </div>
 
       <button
         type="submit"
-        className="bg-teal-600 hover:bg-teal-700 text-white font-semibold py-4 w-full rounded-md transition duration-200"
+        className="bg-[#4096B5] hover:bg-[#2471a3] text-white font-semibold py-4 w-full rounded-md transition duration-200"
       >
         Send Message
       </button>
 
-      <p className="text-blue-400 text-sm text-center underline mt-2 cursor-pointer">
-        Privacy Notice
-      </p>
+      
     </form>
   );
 };

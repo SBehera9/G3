@@ -18,7 +18,7 @@ const KeyFeatures: React.FC<FeatureCardProps> = ({ imageSrc, title, description 
         <h3 className="font-bold text-[#4096B5] group-hover:text-[#4096B5] text-lg sm:text-xl md:text-2xl mb-2">
           {title}
         </h3>
-        <p className="text-sm sm:text-base text-[#4096B5">
+        <p className="text-sm sm:text-base text-black">
           {description}
         </p>
       </div>

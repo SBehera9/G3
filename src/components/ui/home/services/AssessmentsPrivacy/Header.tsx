@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className="flex items-center justify-center bg-fixed bg-cover"
+      className="flex min-h-[600px] items-center justify-center bg-fixed bg-cover"
       style={{ backgroundImage: `url(${Img})` }}
     >
       <div className="bg-black w-full bg-opacity-55 h-full flex flex-col items-center justify-center text-center text-white py-16 sm:py-24 md:py-32 lg:py-44">

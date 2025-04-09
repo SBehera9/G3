@@ -6,7 +6,7 @@ const Career: React.FC = () => {
   return (
     <div className="min-h-screen">
       <header
-        className="relative min-h-screen text-teal-50 text-center bg-center p-6 sm:p-10 md:px-20 lg:px-48 bg-fixed bg-cover flex flex-col justify-center items-center"
+        className="relative min-h-[600px] text-teal-50 text-center bg-center p-6 sm:p-10 md:px-20 lg:px-48 bg-fixed bg-cover flex flex-col justify-center items-center"
         style={{ backgroundImage: `url(${Img})` }}
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">

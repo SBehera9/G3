@@ -4,7 +4,7 @@ import Img from "../../../../../assets/Image/img29.jpg";
 const HeadSection: React.FC = () => {
   return (
     <div
-      className="flex items-center justify-center bg-fixed bg-cover"
+      className="flex  min-h-[600px] items-center justify-center bg-fixed bg-cover"
       style={{ backgroundImage: `url(${Img})` }}
     >
       <div className="bg-[#00000059] w-full bg-opacity-55 h-full flex flex-col text-white py-16 sm:py-24 md:py-32 lg:py-44 px-8 sm:px-12 md:px-24 lg:px-56">

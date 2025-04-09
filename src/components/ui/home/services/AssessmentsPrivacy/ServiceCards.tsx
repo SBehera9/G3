@@ -29,7 +29,7 @@ const ServiceCards: React.FC = () => {
             className="p-8 justify-center items-center border rounded-lg shadow-sm hover:shadow-md transition-shadow"
           >
             <h3 className="text-[#4096B5] text-xl sm:text-2xl font-semibold mb-4">{service.title}</h3>
-            <p className="text-[#4096B5] text-base sm:text-lg">{service.description}</p>
+            <p className="text-black text-base sm:text-lg">{service.description}</p>
           </div>
         ))}
       </div>

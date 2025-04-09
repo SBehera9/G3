@@ -30,8 +30,9 @@ const VAPT: React.FC = () => {
                <div className="text-left w-full px-4 md:px-40">
                 <h1 className="text-[#4096B5] font-bold text-sm sm:text-base md:text-lg animate-slidein">ABOUT</h1>
                 <h2 className="text-[#4096B5] text-xl sm:text-2xl mt-3 animate-slidein">Why Do You Need VAPT?</h2>
-                <p className="mt-3 text-base sm:text-lg md:text-xl text-[#4096B5] animate-slidein">
-                    In today’s digital landscape, cyber threats are evolving rapidly, putting your critical assets and data at risk. Vulnerability Assessment and Penetration Testing (VAPT) helps identify and fix security gaps before attackers can exploit them. It safeguards your business from data breaches, ensures regulatory compliance, and builds trust with customers. Proactively strengthen your defenses and stay ahead of threats with expert VAPT services. <b className="text-[#4096B5] font-semibold">Secure your organization today!</b>
+                <p className="mt-3 text-base sm:text-lg md:text-xl text-black animate-slidein">
+                    In today’s digital landscape, cyber threats are evolving rapidly, putting your critical assets and data at risk. Vulnerability Assessment and Penetration Testing (VAPT) helps identify and fix security gaps before attackers can exploit them. It safeguards your business from data breaches, ensures regulatory compliance, and builds trust with customers. Proactively strengthen your defenses and stay ahead of threats with expert VAPT services. 
+                    <b className="text-[#4096B5] font-semibold">Secure your organization today!</b>
                 </p>
                </div>
             </div>

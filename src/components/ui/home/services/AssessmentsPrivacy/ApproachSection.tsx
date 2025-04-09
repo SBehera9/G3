@@ -33,7 +33,7 @@ const ApproachSection: React.FC = () => {
     <div className="bg-transparent py-12">
       <div className="max-w-7xl mx-auto text-center mb-8 px-4 sm:px-6 md:px-8">
         <h2 className="text-3xl sm:text-4xl text-[#4096B5] font-bold mb-4">Our Approach</h2>
-        <p className="text-[#4096B5] text-lg sm:text-xl max-w-3xl mx-auto">
+        <p className="text-black text-lg sm:text-xl max-w-3xl mx-auto">
           We focus on understanding your objectives from the outset, tailoring our process to support your vision and
           prepare for critical milestones ahead. Collaboration, clear communication, and strategic planning are integral
           to how we work, ensuring each project progresses efficiently and effectively.
@@ -67,7 +67,7 @@ const ApproachSection: React.FC = () => {
           .map((step) => (
             <div key={step.id} className="border-b-2 pb-4 mb-4 shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
                 <h3 className="text-xl sm:text-2xl font-bold text-[#4096B5] mb-3">{step.title}</h3>
-                <p className="text-[#4096B5] text-base sm:text-lg">{step.description}</p>
+                <p className="text-black text-base sm:text-lg">{step.description}</p>
             </div>
           ))}
       </div>

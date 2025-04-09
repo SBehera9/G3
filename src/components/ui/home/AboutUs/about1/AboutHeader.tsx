@@ -5,7 +5,7 @@ import Img1 from "../../../../../assets/Image/img25.jpg";
 const AboutHeader: React.FC = () => {
   return (
     <div
-      className="relative min-h-screen flex items-center justify-center text-teal-50 text-center bg-fixed bg-cover"
+      className="relative min-h-[600px] flex items-center justify-center text-teal-50 text-center bg-fixed bg-cover"
       style={{ backgroundImage: `url(${Img1})` }}
     >
       <header className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 mt-16 lg:mt-24 w-full max-w-7xl">

@@ -4,7 +4,7 @@ import Img from "../../../../../assets/Image/Gif3.gif";
 const Header: React.FC = () => {
   return (
     <header
-      className="relative min-h-screen flex flex-col items-center justify-center text-teal-50 text-center bg-center bg-fixed bg-cover"
+      className="relative min-h-[600px] flex flex-col items-center justify-center text-teal-50 text-center bg-center bg-fixed bg-cover"
       style={{ backgroundImage: `url(${Img})` }}
     >
       <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold px-4 sm:px-8">
