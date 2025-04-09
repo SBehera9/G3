@@ -34,7 +34,7 @@ const NavbarMobile: React.FC = () => {
     <header className="fixed top-0 w-full z-50 bg-white text-[#4096B5] shadow-lg">
       <div className="flex items-center justify-between px-5 py-4">
         <Link to="/">
-          <img src={Logo} alt="Logo" className="h-12 w-48" />
+          <img src={Logo} alt="Logo" className="h-12 w-40" />
         </Link>
         <button onClick={toggleMenu} className="text-2xl text-[#4096B5]">
           {isMenuOpen ? <FaTimes /> : <FaBars />}
