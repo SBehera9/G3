@@ -33,11 +33,11 @@ const Navbar: React.FC = () => {
         </Link>
 
         <nav className="flex items-center w-auto">
-          <ul className="text-base text-[#4096B5] flex justify-between">
+          <ul className="text-base text-primary flex justify-between">
             <li>
               <Link
                 to="/"
-                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-[#4096B5] hover:uppercase"
+                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-secondary hover:uppercase"
               >
                 Home
               </Link>
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
             >
               <Link
                 to="//"
-                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-[#4096B5] hover:uppercase"
+                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-primary hover:uppercase"
               >
                 About
               </Link>
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="/aboutus"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       AboutUs
                     </Link>
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="/career"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Career
                     </Link>
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
             >
               <Link
                 to="//"
-                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-[#4096B5] hover:uppercase"
+                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-secondary hover:uppercase"
               >
                 Services
               </Link>
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
                   >
                     <Link
                       to="//"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Consulting Services
                     </Link>
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
                         <li>
                           <Link
                             to="/cyber-security"
-                            className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                            className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                           >
                             Cyber Security
                           </Link>
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
                         >
                           <Link
                             to="//"
-                            className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                            className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                           >
                             Data Privacy
                           </Link>
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
                               <li>
                                 <Link
                                   to="/implementation"
-                                  className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                                  className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                                 >
                                   Framework Implementation
                                 </Link>
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
                               <li>
                                 <Link
                                   to="/privacyregulation"
-                                  className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                                  className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                                 >
                                   Privacy Regulation
                                 </Link>
@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
                   >
                     <Link
                       to="//"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Assessment
                     </Link>
@@ -161,7 +161,7 @@ const Navbar: React.FC = () => {
                         <li>
                           <Link
                             to="/privacyass"
-                            className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                            className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                           >
                             Privacy Assessments
                           </Link>
@@ -169,7 +169,7 @@ const Navbar: React.FC = () => {
                         <li>
                           <Link
                             to="/cybersecurityass"
-                            className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                            className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                           >
                             Cybersecurity Assessments
                           </Link>
@@ -180,7 +180,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="/professional"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Professional Services
                     </Link>
@@ -188,7 +188,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="/vapt"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       VAPT
                     </Link>
@@ -196,7 +196,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="/security-privacy"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Security & Privacy Standards
                     </Link>
@@ -212,7 +212,7 @@ const Navbar: React.FC = () => {
             >
               <Link
                 to="//"
-                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-[#4096B5] hover:uppercase"
+                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-primary hover:uppercase"
               >
                 Our Products
               </Link>
@@ -221,7 +221,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="/soltrisk"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Soltrisk
                     </Link>
@@ -237,7 +237,7 @@ const Navbar: React.FC = () => {
             >
               <Link
                 to="//"
-                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-[#4096B5] hover:uppercase"
+                className="text-[18px] px-5 py-2 font-semibold transform transition duration-300 hover:scale-105 hover:text-primary hover:uppercase"
               >
                 Resources
               </Link>
@@ -246,7 +246,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="//"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Blog
                     </Link>
@@ -254,7 +254,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="//"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Policies
                     </Link>
@@ -262,7 +262,7 @@ const Navbar: React.FC = () => {
                   <li>
                     <Link
                       to="//"
-                      className="block px-4 py-2 text-[#4096B5] hover:text-white bg-transparent hover:bg-[#4096B5] border-l-4 border-transparent hover:border-[#4096B5]"
+                      className="block px-4 py-2 text-primary hover:text-white bg-transparent hover:bg-secondary border-l-4 border-transparent hover:border-primary"
                     >
                       Case Studies
                     </Link>

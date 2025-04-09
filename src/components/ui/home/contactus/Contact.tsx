@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
                 <MapPin />
               </div>
               <div>
-                <p className="font-semibold text-[#4096B5] text-lg">Where We Are:</p>
+                <p className="font-semibold text-primary text-lg">Where We Are:</p>
                 <p>Chennai, India</p>
               </div>
             </div>
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
                 <Mail />
               </div>
               <div>
-                <p className="font-semibold text-[#4096B5] text-lg">Email:</p>
+                <p className="font-semibold text-primary text-lg">Email:</p>
                 <p>info@g3cyberspace.com</p>
               </div>
             </div>

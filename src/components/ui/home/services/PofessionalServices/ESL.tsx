@@ -8,8 +8,8 @@ const ESL: React.FC = () => {
   return (
     <div className="container mx-auto px-4 md:px-64 py-6 md:py-10">
       <header className="text-left mb-8">
-        <p className="text-[#4096B5] font-semibold text-lg md:text-xl">EXPERT SECURITY LEADERSHIP</p>
-        <h1 className="text-2xl md:text-3xl text-[#4096B5] font-bold mt-2">Tailored vCISO & vDPO solutions</h1>
+        <p className="text-primary font-semibold text-lg md:text-xl">EXPERT SECURITY LEADERSHIP</p>
+        <h1 className="text-2xl md:text-3xl text-primary font-bold mt-2">Tailored vCISO & vDPO solutions</h1>
       </header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">

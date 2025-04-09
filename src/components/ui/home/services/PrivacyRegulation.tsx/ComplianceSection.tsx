@@ -30,7 +30,7 @@ const ComplianceSection: React.FC = () => {
         className="flex-1 text-center md:text-left"
         data-aos="fade-left" 
       >
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4096B5] mb-4">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
           Empowering Businesses with Comprehensive Privacy Compliance Solutions
         </h3>
         <p className="text-black text-sm sm:text-base leading-6">

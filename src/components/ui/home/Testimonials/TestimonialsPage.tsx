@@ -84,7 +84,7 @@ const ClientsMarquee: React.FC = () => {
     <div className="bg-gray-50 py-12 px-4 sm:py-16 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#4096B5] mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-3 sm:mb-4">
             Our Clients
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">

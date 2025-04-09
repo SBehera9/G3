@@ -11,11 +11,11 @@ const HeadSection: React.FC = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-center sm:text-left">
           Professional Services -<br />vCISO & vDPO
         </h1>
-        <p className="text-xl sm:text-2xl md:text-3xl shadow-sm p-4 border-l-8 border-[#4096B5] text-center sm:text-left">
+        <p className="text-xl sm:text-2xl md:text-3xl shadow-sm p-4 border-l-8 border-primary text-center sm:text-left">
           Expert guidance for security & compliance
         </p>
         <div className="text-center sm:text-left py-6">
-          <button className="bg-[#4096B5] hover:bg-[#4682B4] text-white font-bold py-3 px-6 rounded-lg">
+          <button className="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg">
             VIEW SERVICES
           </button>
         </div>

@@ -13,7 +13,7 @@ const RegulationBox: React.FC<RegulationBoxProps> = ({ title }) => {
 
   return (
     <motion.div
-      className="group relative  text-black border-l-4 border-[#4096B5] p-4 rounded-lg shadow-sm overflow-hidden"
+      className="group relative  text-black border-l-4 border-primary p-4 rounded-lg shadow-sm overflow-hidden"
       variants={itemVariants}
       initial="hidden"
       animate="visible"
@@ -21,7 +21,7 @@ const RegulationBox: React.FC<RegulationBoxProps> = ({ title }) => {
     >
       
       <motion.span
-        className="absolute inset-0 bg-[#4096B5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"
+        className="absolute inset-0 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-0"
       />
 
       

@@ -23,9 +23,9 @@ const services = [
     return (
       <div className="bg-white rounded-xl p-7 shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out transform hover:scale-105">
         <div className="">
-          <h3 className="text-xl font-bold text-[#4096B5]">{title}</h3>
+          <h3 className="text-xl font-bold text-primary">{title}</h3>
         </div>
-        <div className="border-2 rounded-xl p-4 mt-3 hover:bg-[#4096B5] ">
+        <div className="border-2 rounded-xl p-4 mt-3 hover:bg-primary ">
           <p className="mt-2 text-black hover:text-[white]">{description}</p>
         </div>
       </div>

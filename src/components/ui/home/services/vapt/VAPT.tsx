@@ -28,11 +28,11 @@ const VAPT: React.FC = () => {
 
             <div className="flex flex-col justify-center items-center px-4 sm:px-16 md:px-32 lg:px-56 py-16 sm:py-24 md:py-32">
                <div className="text-left w-full px-4 md:px-40">
-                <h1 className="text-[#4096B5] font-bold text-sm sm:text-base md:text-lg animate-slidein">ABOUT</h1>
-                <h2 className="text-[#4096B5] text-xl sm:text-2xl mt-3 animate-slidein">Why Do You Need VAPT?</h2>
+                <h1 className="text-primary font-bold text-sm sm:text-base md:text-lg animate-slidein">ABOUT</h1>
+                <h2 className="text-primary text-xl sm:text-2xl mt-3 animate-slidein">Why Do You Need VAPT?</h2>
                 <p className="mt-3 text-base sm:text-lg md:text-xl text-black animate-slidein">
                     In today’s digital landscape, cyber threats are evolving rapidly, putting your critical assets and data at risk. Vulnerability Assessment and Penetration Testing (VAPT) helps identify and fix security gaps before attackers can exploit them. It safeguards your business from data breaches, ensures regulatory compliance, and builds trust with customers. Proactively strengthen your defenses and stay ahead of threats with expert VAPT services. 
-                    <b className="text-[#4096B5] font-semibold">Secure your organization today!</b>
+                    <b className="text-primary font-semibold">Secure your organization today!</b>
                 </p>
                </div>
             </div>
@@ -40,8 +40,8 @@ const VAPT: React.FC = () => {
             <div className="bg-gray-200 py-10">
                 <div className="max-w-3xl mx-auto px-4 sm:px-16 md:px-32">
                     <div className="text-left mb-10">
-                        <h1 className="text-[#4096B5] animate-slidein">VAPT SERVICES</h1>
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#4096B5] animate-slidein">
+                        <h1 className="text-primary animate-slidein">VAPT SERVICES</h1>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary animate-slidein">
                             Stay Ahead of Threats – Secure, Assess, Protect with Expert VAPT Services!
                         </h2>
                     </div>
@@ -53,7 +53,7 @@ const VAPT: React.FC = () => {
                             className="w-full h-auto object-cover animate-slidein"
                         />
                         <div className="p-6">
-                            <h2 className="text-xl sm:text-2xl font-semibold text-[#4096B5] mb-4 animate-slidein">
+                            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 animate-slidein">
                                 Penetration Testing: Secure Your Business Against Cyber Threats
                             </h2>
                             <p className="text-[] mb-4 animate-slidein">
@@ -79,7 +79,7 @@ const VAPT: React.FC = () => {
                             className="w-full h-auto object-cover animate-slidein"
                         />
                         <div className="p-6">
-                            <h2 className="text-xl sm:text-2xl font-semibold text-[#4096B5] mb-4 animate-slidein">
+                            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 animate-slidein">
                                 Vulnerability Assessment
                             </h2>
                             <p className="text-[] mb-4 animate-slidein">
@@ -102,7 +102,7 @@ const VAPT: React.FC = () => {
                             className="w-full h-auto object-cover animate-slidein"
                         />
                         <div className="p-6">
-                            <h2 className="text-xl sm:text-2xl font-semibold text-[#4096B5] mb-4 animate-slidein">Phishing Assessments</h2>
+                            <h2 className="text-xl sm:text-2xl font-semibold text-primary mb-4 animate-slidein">Phishing Assessments</h2>
                             <p className="text-[] animate-slidein">
                                 Phishing assessments are simulated social engineering exercises designed to evaluate your organization's susceptibility to phishing attacks. These assessments mimic real-world phishing attempts to identify vulnerabilities in employee awareness, response, and organizational security practices. By testing and educating your team, phishing assessments help reduce the risk of successful attacks and data breaches.
                             </p>

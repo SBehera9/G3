@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         </p>
         <button
           onClick={handleNavigateToForm}
-          className="bg-[#4096B5] text-white px-6 py-2 rounded-lg hover:bg-[#4096B5] focus:outline-none focus:ring focus:ring-[#4096B5] mt-10 font-bold"
+          className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary focus:outline-none focus:ring focus:ring-primary mt-10 font-bold"
         >
           Contact us
         </button>

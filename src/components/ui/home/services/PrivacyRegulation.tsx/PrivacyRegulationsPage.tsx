@@ -25,7 +25,7 @@ const PrivacyRegulationsPage: React.FC = () => {
       <main className="flex-1 container mx-auto p-6">
        
         <section className="mb-10 px-6 sm:px-16 md:px-24 lg:px-32">
-          <h2 className="text-[#4096B5] font-bold text-2xl sm:text-3xl md:text-4xl mb-4">Data Protection Regulations</h2>
+          <h2 className="text-primary font-bold text-2xl sm:text-3xl md:text-4xl mb-4">Data Protection Regulations</h2>
           <motion.div
             className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4"
             initial="hidden"
