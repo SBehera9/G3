@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 import ContactForm from "./ContactForm";
 import Footer from "../../../Footer";
 
@@ -22,16 +22,6 @@ const Contact: React.FC = () => {
               <p>Chennai, India</p>
             </div>
           </div>
-
-          {/* <div className="flex items-start space-x-4">
-            <div className="bg-white text-black p-4 rounded-md">
-              <Phone />
-            </div>
-            <div>
-              <p className="font-semibold text-teal-400 text-lg">Phone:</p>
-              <p>+91 99446 46365</p>
-            </div>
-          </div> */}
 
           <div className="flex items-start space-x-4">
             <div className="bg-white text-black p-4 rounded-md">
