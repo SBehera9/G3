@@ -21,6 +21,7 @@ import ContactForm from "./components/ui/home/contactus/ContactForm";
 import PofessionalServices from "./components/ui/home/services/PofessionalServices/PofessionalServices";
 import PrivacyPolicy from "./components/ui/home/privacypolicy/PrivacyPolicy";
 import VAPT from "./components/ui/home/services/vapt/VAPT";
+import Services from "./components/ui/home/services/Services"; // Import your Services component
 
 const ConditionalNavbar: React.FC = () => {
   const location = useLocation();
@@ -37,15 +38,14 @@ const ConditionalNavbar: React.FC = () => {
 const App: React.FC = () => {
   return (
     <Router>
-     
       <ConditionalNavbar />
       <ScrollToTop />
 
-     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/services" element={<Services />} /> {/* Add Services route */}
         <Route path="/cyber-security" element={<CybersecurityServicesPage />} />
         <Route path="/implementation" element={<DataPrivacyFramework />} />
         <Route path="/privacyregulation" element={<PrivacyRegulationsPage />} />

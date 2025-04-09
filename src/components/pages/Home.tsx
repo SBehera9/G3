@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../../assets/Image/Background.jpg";
+import VideoBg from "../../assets/Image/v2.mp4"; 
 import About from "../ui/home/AboutUs/About";
 import Services from "../ui/home/services/Services";
 import CompliancePage from "../ui/home/Compliance/ComplianceCard";
@@ -10,11 +10,19 @@ import TestimonialsPage from "../ui/home/Testimonials/TestimonialsPage";
 const Home: React.FC = () => {
   return (
     <div className="bg-white !scroll-smooth">
-      <div
-        className="relative flex items-center justify-start h-screen sm:h-[75vh] md:h-[85vh] lg:h-[600px] bg-cover bg-fixed bg-center"
-        style={{ backgroundImage: `url(${Img})` }}
-      >
-        <div className="absolute inset-0 bg-black/30"></div> 
+      <div className="relative flex items-center justify-start h-screen sm:h-[75vh] md:h-[85vh] lg:h-[600px] overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover"
+        >
+          <source src={VideoBg} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        
+        <div className="absolute inset-0 bg-black/30 z-1"></div> 
         
         <div className="container mx-auto px-4 relative z-10 mt-16 md:mt-24"> 
           <div className="max-w-2xl">

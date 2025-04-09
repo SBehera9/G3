@@ -4,7 +4,7 @@ import Img from "../../../../../assets/Image/img31.jpg";
 const Header: React.FC = () => {
   return (
     <header 
-      className="relative min-h-[600px] flex items-center justify-center text-primary text-center bg-center bg-fixed bg-cover"
+      className="relative min-h-[600px] flex items-center justify-center text-white text-center bg-center bg-fixed bg-cover"
       style={{ backgroundImage: `url(${Img})` }}
     >
       <div className="container mx-auto px-6 py-12 sm:px-8 sm:py-16 md:px-10 lg:px-12">
