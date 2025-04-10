@@ -9,10 +9,10 @@ const Career: React.FC = () => {
         className="relative min-h-[600px] text-primary text-center bg-center p-6 sm:p-10 md:px-20 lg:px-48 bg-fixed bg-cover flex flex-col justify-center items-center"
         style={{ backgroundImage: `url(${Img})` }}
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
           Join the G3 Cyberspace Team
         </h1>
-        <p className="text-base sm:text-lg md:text-xl mt-4">
+        <p className="text-base sm:text-lg md:text-xl mt-4 text-white">
           Make an impact in the dynamic field of data privacy and compliance. We’re looking for talented, passionate individuals who are ready to solve challenges and grow with us.
         </p>
       </header>
