@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../../../../../assets/Image/image27.jpg";
+import Img from "../../../../../assets/Image/CareerPage.png";
 import Footer from "../../../../Footer";
 
 const Career: React.FC = () => {
