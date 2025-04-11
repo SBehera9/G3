@@ -8,6 +8,7 @@ interface FormData {
   email: string;
   subject: string;
   message: string;
+  acceptedTerms: boolean;
 }
 
 const ContactForm: React.FC = () => {
@@ -21,11 +22,16 @@ const ContactForm: React.FC = () => {
   const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
+    if (!data.acceptedTerms) {
+      alert("Please accept the terms before submitting.");
+      return;
+    }
+
     try {
       await axios.post("http://localhost:5000/api/contact", data);
       alert("Form submitted successfully!");
       reset();
-      navigate("/contact-form");
+      navigate("/contact");
     } catch (error) {
       console.error("Error sending message:", error);
       alert("Failed to submit the form. Please try again.");
@@ -86,14 +92,24 @@ const ContactForm: React.FC = () => {
         {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
       </div>
 
+      <div className="flex items-center">
+        <input
+          type="checkbox"
+          {...register("acceptedTerms", { required: "You must accept the terms" })}
+          className="mr-2"
+        />
+        <label className="text-sm text-primary">
+          I have read and accept the <span className="underline cursor-pointer">terms & conditions</span>
+        </label>
+      </div>
+      {errors.acceptedTerms && <p className="text-red-500 text-sm">{errors.acceptedTerms.message}</p>}
+
       <button
         type="submit"
         className="bg-primary hover:bg-secondary text-white font-semibold py-4 w-full rounded-md transition duration-200"
       >
         Send Message
       </button>
-
-      
     </form>
   );
 };

@@ -6,7 +6,7 @@ const PrivacyPolicy: React.FC = () => {
   return (
     <div className="mx-auto text-gray-800">
       <div
-        className="relative min-h-[600px] items-center text-primary text-center bg-center flex flex-col justify-center bg-fixed bg-cover px-4 sm:px-14"
+        className="relative min-h-[600px] items-center text-white text-center bg-center flex flex-col justify-center bg-fixed bg-cover px-4 sm:px-14"
         style={{ backgroundImage: `url(${Img})` }}
       >
         <h1 className="text-4xl sm:text-6xl mt-10 font-bold mb-6 text-center">Privacy Policy</h1>
