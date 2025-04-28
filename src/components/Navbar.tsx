@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Image/Logo12.png";
+// import Logo from "../assets/Image/Logo12.png";
 
 const Navbar: React.FC = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -23,14 +23,14 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="fixed top-0 w-full z-50 bg-white shadow-md">
-      <div className="flex items-center justify-between xl:max-w-7xl xl:mx-auto max-w-full px-[6%] py-4">
-        <Link to="/">
+      <div className="flex items-center justify-center xl:max-w-7xl xl:mx-auto max-w-full px-[6%] py-4 ">
+        {/* <Link to="/">
           <img
             src={Logo}
             alt="Logo"
             className="h-14 w-56 transform transition duration-300 hover:scale-105"
           />
-        </Link>
+        </Link> */}
 
         <nav className="flex items-center w-auto">
           <ul className="text-base text-primary flex justify-between">

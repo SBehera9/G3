@@ -3,7 +3,7 @@ import Img from "../../../../assets/Image/img2.jpg";
 
 const HeroSection: React.FC = () => {
   return (
-    <div  className="relative min-h-screen items-center  text-primary text-center bg-center flex item-center justify-center bg-fixed bg-cover"
+    <div  className="relative min-h-screen items-center  text-white text-center bg-center flex item-center justify-center bg-fixed bg-cover"
     style={{ backgroundImage: `url(${Img})` }}>
       <div className="text-center max-w-6xl">
         <h1 className="text-4xl md:text-6xl lg:text-5xl font-bold mb-4 animate-slidein">

@@ -33,7 +33,5 @@ export default {
       rotate: ["group-hover"],
     },
   },
-  plugins: [
-    // Add Tailwind plugins here if needed
-  ],
+ 
 }
