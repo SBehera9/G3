@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import img1 from "../../../../assets/Image/c1.png";
 import img2 from "../../../../assets/Image/c2.png";
-import img3 from "../../../../assets/Image/c3.png";
 import img4 from "../../../../assets/Image/c4.png";
 import img5 from "../../../../assets/Image/c5.png";
 
@@ -28,18 +27,14 @@ const ClientsMarquee: React.FC = () => {
       company: 'Innovate Inc',
       logo: img2,
     },
+
     {
       id: 3,
-      company: 'Global Solutions',
-      logo: img3,
-    },
-    {
-      id: 4,
       company: 'Global Solutions',
       logo: img4,
     },
     {
-      id: 5,
+      id: 4,
       company: 'BackSpace',
       logo: img5,
     },

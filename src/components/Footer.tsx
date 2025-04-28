@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'; 
-// import logo from '../assets/Image/Logo12.png';
+import logo from '../assets/Image/Logo12.png';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white text-primary py-12">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
         <div className="md:col-span-1">
-          {/* <img
+          <img
             src={logo}
             alt="Company Logo"
             className="w-32 h-auto mb-4"
-          /> */}
+          />
           <p className="font-semibold">Follow Us</p>
           <div className="flex space-x-4 mt-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-300 hover:text-secondary">

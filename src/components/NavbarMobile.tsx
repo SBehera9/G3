@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-// import Logo from "../assets/Image/Logo12.png";
+import Logo from "../assets/Image/Logo12.png";
 
 const NavbarMobile: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +33,9 @@ const NavbarMobile: React.FC = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-white text-primary shadow-lg">
       <div className="flex items-center justify-between px-5 py-4">
-        {/* <Link to="/">
+        <Link to="/">
           <img src={Logo} alt="Logo" className="h-12 w-40" />
-        </Link> */}
+        </Link>
         <button onClick={toggleMenu} className="text-2xl text-primary">
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
