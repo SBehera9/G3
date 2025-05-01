@@ -21,7 +21,7 @@ export default {
         'y-180': '180deg',
       },
       colors: {
-        primary: 'red',
+        primary: '#4096B5',
         secondary: '#2471a3',
         accent: '#4682B4',
       }
