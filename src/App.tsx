@@ -71,12 +71,16 @@
 //   );
 // };
 
-// const App: React.FC = () => {
-//   return (
-//     <Router>
-//       <AppContent />
-//     </Router>
-//   );
-// };
+const App: React.FC = () => {
+  return (
+    <div>
+      <h1 >Nexus Infotech</h1>
+    </div> //ae div ta kata hebo au baki comment ru bahariba
 
-// export default App;
+    // <Router>
+    //   <AppContent />
+    // </Router>
+  );
+};
+
+export default App;
