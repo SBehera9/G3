@@ -73,9 +73,9 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return {
-    // <Router>
-    //   <AppContent />
-    // </Router>
+    <Router>
+     <AppContent />
+    </Router>
   );
 };
 
